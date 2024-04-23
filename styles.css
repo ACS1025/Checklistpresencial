@@ -1,0 +1,133 @@
+/* Reset de estilos */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'inter', sans-serif;
+}
+
+/* Espaçamento entre blocos */
+.spacer {
+    height: 1.5rem;
+}
+
+/* Estilos do corpo */
+body {
+    background: #0c0ce94d;
+    width: 100%;
+    min-height: 88vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos do cabeçalho */
+.header {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Conteúdo da landing page */
+.landing-content {
+    width: 75%;
+    background-color: #F8CD0F;
+    padding: 2rem;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagem do formulário */
+.form-image {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8CD0F;
+    padding: 1rem;
+}
+
+.form-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Formulário */
+.form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-header {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #4CAF50;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* Campos de entrada */
+.fieldset1 .input-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    width: calc(100% / 2 - 1rem);
+}
+
+.fieldset1 .input-box label {
+    font-weight: bold;
+    margin-right: 1rem;
+    font-size: 0.9em;
+}
+
+.fieldset1 .input-box select {
+    flex-grow: 1;
+}
+
+/* Grupo de botões de rádio */
+.radio-group {
+    margin-bottom: 1.5rem;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Botão de envio */
+.input-box button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input-box button:hover {
+    background-color: #45a049;
+}
+
+/* Rodapé */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist presencial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Checklist presencial</h1>
+    </header>
+
+        <section class="landing-content">
+        <p>Para realizar o transporte de cargas no Brasil é muito importante certificar que os itens de segurança obrigatórios do caminhão estejam em dia. É recomendado realizar o checklist de segurança sempre que este estiver programando para viagem monitor. Esta é a lista de equipamentos de segurança checados no PA - Supersonic. Os itens mencionados são obrigatórios para viagens monitoradas pela Komando. Portanto, caso o responsável pelo veículo não cumpra com esta listagem, pode ser autuado.</p>
+
+        <div class="spacer"></div>
+            <form class="form" action="gerar_relatorio.php" method="post"></form>
+            <form class="form" method="post" action="https://script.google.com/macros/s/AKfycbxUXJmD3FlA70SNFnlexPaz_ULEhU9txJ1h1EmQ87JUsCjPxALCy_VmnlBhqZJ-Nnpy/exec">
+            <h2>Dados Gerais</h2>
+            <div class="spacer"></div><b>
+            <fieldset>
+                <legend>Veículo</legend></legend>
+                <div class="spacer"></div>
+                <label for="placa">Placa:</label>
+                <input type="text" id="placa" name="placa" required>
+
+                <label for="data_checklist">Data do Checklist:</label>
+                <input type="date" id="data_checklist" name="data_checklist">
+
+                <label for="data_validade">Data de Validade:</label>
+                <input type="date" id="data_validade" name="data_validade">
+
+                <label for="status">Status</label>
+                <select id="status" name="status" required>
+                    <option value="aprovado">APROVADO</option>
+                    <option value="reprovado">REPROVADO</option>
+                    <option value="em_avaliacao">EM AVALIAÇÃO</option>
+                </select>
+
+                <div class="spacer"></div>
+
+                <label for="frota">Frota:</label>
+                <input type="text" id="frota" name="frota" required>
+           
+                <label for="1_carreta">1ª Carreta:</label>
+                <input type="text" id="1_carreta" name="1_carreta" required>
+
+                <label for="2_carreta">2ª Carreta:</label>
+                <input type="text" id="2_carreta" name="2_carreta">
+            </fieldset>
+
+            <fieldset>
+                <legend>Envolvidos</legend>
+                <div class="spacer"></div>
+                <div class="input-box">
+                    <label for="doc_motorista" style="font-weight: bold;">Motorista:</label>
+                    <select id="doc_motorista" name="doc_motorista"class="select2">
+                        <option value="Selecione tipo de motorista">Selecione tipo de motorista</option>
+                        <option value="ABIMAEL GOMES FILHO">ABIMAEL GOMES FILHO</option>
+                        <option value="CLOVIS SEVERINO DE LIMA">CLOVIS SEVERINO DE LIMA</option>
+                        <option value="VALDOMIRO ALEXANDRE DA SILVA">VALDOMIRO ALEXANDRE DA SILVA</option>
+                        <option value="ABNER PEREIRA SOUZA DE SOUSA">ABNER PEREIRA SOUZA DE SOUSA</option>
+                        <option value="ABRAAO MARINHO CARNEIRO">ABRAAO MARINHO CARNEIRO</option>
+                        <option value="ACIR FELICIO NETO">ACIR FELICIO NETO</option>
+                        <option value="ADALBERTO REIS SANTOS GUIMARAES">ADALBERTO REIS SANTOS GUIMARAES</option>
+                        <option value="ADALBERTO ROSA DOS SANTOS">ADALBERTO ROSA DOS SANTOS</option>
+                        <option value="ADAO BRITO DA CRUZ">ADAO BRITO DA CRUZ</option>
+                        <option value="ADAUTO DE SOUZA RODRIGUES">ADAUTO DE SOUZA RODRIGUES</option>
+                        <option value="ADELAR FERRAZ">ADELAR FERRAZ</option>
+                        <option value="ADEMIR DOS SANTOS">ADEMIR DOS SANTOS</option>
+                        <option value="ADEVANIO DE MATOS LIMA">ADEVANIO DE MATOS LIMA</option>
+                        <option value="ADEVILSON MARTINS">ADEVILSON MARTINS</option>
+                        <option value="ADGEERRE ALVES PEREIRA">ADGEERRE ALVES PEREIRA</option>
+                        <option value="ADILSON FERNANDO MELLI">ADILSON FERNANDO MELLI</option>
+                        <option value="ADJALMA ALVES DE MIRANDA">ADJALMA ALVES DE MIRANDA</option>
+                        <option value="ADRIANO DE ANDRADE">ADRIANO DE ANDRADE</option>
+                        <option value="ADRIANO SILVEIRA VIANA">ADRIANO SILVEIRA VIANA</option>
+                        <option value="AFONSO ARAUJO DA SILVA">AFONSO ARAUJO DA SILVA</option>
+                        <option value="AFONSO MACHADO RODRIGUES">AFONSO MACHADO RODRIGUES</option>
+                        <option value="AGMAR VIEIRA DE MENEZES">AGMAR VIEIRA DE MENEZES</option>
+                        <option value="AGNALDO DE OLIVEIRA LOPES">AGNALDO DE OLIVEIRA LOPES</option>
+                        <option value="AGNALDO FRANCISCO DE ABREU">AGNALDO FRANCISCO DE ABREU</option>
+                        <option value="AGNALDO JOSE NUNES">AGNALDO JOSE NUNES</option>
+                        <option value="AILTON COSTA NERY">AILTON COSTA NERY</option>
+                        <option value="AILTON MELO PEREIRA">AILTON MELO PEREIRA</option>
+                        <option value="AILTON SOUZA DOS SANTOS">AILTON SOUZA DOS SANTOS</option>
+                        <option value="AIRTON SOARES DA SILVA">AIRTON SOARES DA SILVA</option>
+                        <option value="ALAND FRANCISCO DA COSTA SOUZA">ALAND FRANCISCO DA COSTA SOUZA</option>
+                        <option value="ALBERTO HEITOR">ALBERTO HEITOR</option>
+                        <option value="ALBINO SCUSSEL">ALBINO SCUSSEL</option>
+                        <option value="ALCEMIR LIMA DA SILVA">ALCEMIR LIMA DA SILVA</option>
+                        <option value="ALCIDES CORDEIRO">ALCIDES CORDEIRO</option>
+                        <option value="ALDO EVANGELISTA DE OLIVEIRA">ALDO EVANGELISTA DE OLIVEIRA</option>
+                        <option value="ALECIO COELHO DUARTE">ALECIO COELHO DUARTE</option>
+                        <option value="ALESSANDRO PEREIRA RECHE">ALESSANDRO PEREIRA RECHE</option>
+                        <option value="ALESSANDRO RODRIGUES DOS SANTOS">ALESSANDRO RODRIGUES DOS SANTOS</option>
+                        <option value="ALEX COELHO SOARES">ALEX COELHO SOARES</option>
+                        <option value="ALEX FERNANDES MUNIZ">ALEX FERNANDES MUNIZ</option>
+                        <option value="ALEXANDRE DUTRA DE SOUZA">ALEXANDRE DUTRA DE SOUZA</option>
+                        <option value="ALEXANDRE PAGANELI GOMES">ALEXANDRE PAGANELI GOMES</option>
+                        <option value="ALEXANDRE PEREIRA CASTRO">ALEXANDRE PEREIRA CASTRO</option>
+                        <option value="ALEXANDRE SANCHES MALUCHES">ALEXANDRE SANCHES MALUCHES</option>
+                        <option value="ALISSON S BUENO">ALISSON S BUENO</option>
+                        <option value="ALMÉRIO APARECIDO SOUZA">ALMÉRIO APARECIDO SOUZA</option>
+                        <option value="ALMIR ALMEIDA OLIVEIRA">ALMIR ALMEIDA OLIVEIRA</option>
+                        <option value="ALTEVIR XIMENES DA SILVA">ALTEVIR XIMENES DA SILVA</option>
+                        <option value="ALYSSANDRO CAMARA FERNANDES">ALYSSANDRO CAMARA FERNANDES</option>
+                        <option value="AMAURI PEREIRA DA SILVA">AMAURI PEREIRA DA SILVA</option>
+                        <option value="AMAURI SANTOS FERNANDES">AMAURI SANTOS FERNANDES</option>
+                        <option value="AMIR DIAS">AMIR DIAS</option>
+                        <option value="ANDERSON CLEYTON GONCALVES">ANDERSON CLEYTON GONCALVES</option>
+                        <option value="ANDERSON DE SOUZA ALVES">ANDERSON DE SOUZA ALVES</option>
+                        <option value="ANDERSON DO CARMO AZEVEDO">ANDERSON DO CARMO AZEVEDO</option>
+                        <option value="ANDERSON VIEIRA DE SOUZA">ANDERSON VIEIRA DE SOUZA</option>
+                        <option value="ANDRE DA SILVA E SILVA">ANDRE DA SILVA E SILVA</option>
+                        <option value="ANDRE DE TONI">ANDRE DE TONI</option>
+                        <option value="ANDRE EDUARDO CRISCI">ANDRE EDUARDO CRISCI</option>
+                        <option value="ANDRE LUIS PROTASIO">ANDRE LUIS PROTASIO</option>
+                        <option value="ANDRE SAULO CHITCOT CALCADA">ANDRE SAULO CHITCOT CALCADA</option>
+                        <option value="ANDREZA MARIA DOS SANTOS">ANDREZA MARIA DOS SANTOS</option>
+                        <option value="ANGEL JOSE HERNANDEZ MORENO">ANGEL JOSE HERNANDEZ MORENO</option>
+                        <option value="ANGELO CRISTHIAN PANTOJA PIRES">ANGELO CRISTHIAN PANTOJA PIRES</option>
+                        <option value="ANNA CIBELLY DE AZEVEDO SOUZA">ANNA CIBELLY DE AZEVEDO SOUZA</option>
+                        <option value="ANTONIA SUELI PEREIRA BATISTA">ANTONIA SUELI PEREIRA BATISTA</option>
+                        <option value="ANTONIO APARECIDO COSTA">ANTONIO APARECIDO COSTA</option>
+                        <option value="ANTONIO BONFIM DA SILVA">ANTONIO BONFIM DA SILVA</option>
+                        <option value="ANTONIO CAITANO DOS SANTOS">ANTONIO CAITANO DOS SANTOS</option>
+                        <option value="ANTONIO CARLOS DE OLIVEIRA">ANTONIO CARLOS DE OLIVEIRA</option>
+                        <option value="ANTONIO CARLOS RUBINI">ANTONIO CARLOS RUBINI</option>
+                        <option value="ANTONIO CLAUDINEI MINGHINI">ANTONIO CLAUDINEI MINGHINI</option>
+                        <option value="ANTONIO FLAVIO">ANTONIO FLAVIO</option>
+                        <option value="ANTONIO FREDSON COSTA DE FIGUEIREDO">ANTONIO FREDSON COSTA DE FIGUEIREDO</option>
+                        <option value="ANTONIO GILSON VALDEVINO SENA">ANTONIO GILSON VALDEVINO SENA</option>
+                        <option value="ANTONIO IVAN MENDES LUZ">ANTONIO IVAN MENDES LUZ</option>
+                        <option value="ANTONIO JOAO DA SILVA">ANTONIO JOAO DA SILVA</option>
+                        <option value="ANTONIO JOAQUIM DE FIGUEIREDO">ANTONIO JOAQUIM DE FIGUEIREDO</option>
+                        <option value="ANTONIO LUCAS ZEFERINO BORGES">ANTONIO LUCAS ZEFERINO BORGES</option>
+                        <option value="ANTONIO LUIZ DE MORAES NETO">ANTONIO LUIZ DE MORAES NETO</option>
+                        <option value="ANTONIO MARTIONHO DA SILVA">ANTONIO MARTIONHO DA SILVA</option>
+                        <option value="ANTONIO SANTO BETTETI">ANTONIO SANTO BETTETI</option>
+                        <option value="ANY KARINE SILVA DA PENHA">ANY KARINE SILVA DA PENHA</option>
+                        <option value="ARGENIS RAFAEL MEDINA MELENDEZ">ARGENIS RAFAEL MEDINA MELENDEZ</option>
+                        <option value="ARLESON LEAO CINTRAO">ARLESON LEAO CINTRAO</option>
+                        <option value="ARLINDO GOMES DA SILVA PAIVA">ARLINDO GOMES DA SILVA PAIVA</option>
+                        <option value="ARNALDO RESPLANDE NUNES">ARNALDO RESPLANDE NUNES</option>
+                        <option value="ARNOLDO DA SILVA GOMES">ARNOLDO DA SILVA GOMES</option>
+                        <option value="ARQUIMEDES JOSE DOS SANTOS FILHO">ARQUIMEDES JOSE DOS SANTOS FILHO</option>
+                        <option value="AUDAIR VIEIRA VALENTIM">AUDAIR VIEIRA VALENTIM</option>
+                        <option value="AUGUSTO CESAR PAIXAO E SILVA DA CONCEIÇÃO">AUGUSTO CESAR PAIXAO E SILVA DA CONCEIÇÃO</option>
+                        <option value="AURENIR SILVA DE LIMA">AURENIR SILVA DE LIMA</option>
+                        <option value="AVANILSON BORGES SOARES">AVANILSON BORGES SOARES</option>
+                        <option value="AXCEL MORAES DE SOUZA">AXCEL MORAES DE SOUZA</option>
+                        <option value="BEZALIEL DE OLIVEIRA MIRANDA">BEZALIEL DE OLIVEIRA MIRANDA</option>
+                        <option value="BRENO JEAMES PINHEIRO DA SILVA">BRENO JEAMES PINHEIRO DA SILVA</option>
+                        <option value="BRENO MATHEUS SANTANA DE SOUSA">BRENO MATHEUS SANTANA DE SOUSA</option>
+                        <option value="BRUNO ANTUNES FERREIRA">BRUNO ANTUNES FERREIRA</option>
+                        <option value="BRUNO CESAR DA SILVA">BRUNO CESAR DA SILVA</option>
+                        <option value="BRUNO DA COSTA SOARES">BRUNO DA COSTA SOARES</option>
+                        <option value="BRUNO DE LEONARDIS FAGOTTI">BRUNO DE LEONARDIS FAGOTTI</option>
+                        <option value="BRUNO DOS SANTOS SOUZA">BRUNO DOS SANTOS SOUZA</option>
+                        <option value="BRUNO FEITOSA DOS SANTOS">BRUNO FEITOSA DOS SANTOS</option>
+                        <option value="BRUNO HENRIQUE DA SILVA ALVES">BRUNO HENRIQUE DA SILVA ALVES</option>
+                        <option value="BRUNO LEMES MONTEIRO">BRUNO LEMES MONTEIRO</option>
+                        <option value="BRUNO LIMA">BRUNO LIMA</option>
+                        <option value="BRUNO RAPHAEL DOS SANTOS CORDEIRO">BRUNO RAPHAEL DOS SANTOS CORDEIRO</option>
+                        <option value="BRUNO RODRIGUES RAMOS">BRUNO RODRIGUES RAMOS</option>
+                        <option value="BRUNO SILVA SIMÃO">BRUNO SILVA SIMÃO</option>
+                        <option value="BRUNO WILBRINK DE OLIVEIRA">BRUNO WILBRINK DE OLIVEIRA</option>
+                        <option value="CAIO AUGUSTO DO L CAMARGO">CAIO AUGUSTO DO L CAMARGO</option>
+                        <option value="CAIO AUGUSTO DOS A CAMARGO">CAIO AUGUSTO DOS A CAMARGO</option>
+                        <option value="CAIO DA SILVA GOMES">CAIO DA SILVA GOMES</option>
+                        <option value="CAIO JEFERSON ALVES PEREIRA">CAIO JEFERSON ALVES PEREIRA</option>
+                        <option value="CAIO VINICIUS BATISTA LIMA">CAIO VINICIUS BATISTA LIMA</option>
+                        <option value="CARLOS ADALBERTO NARDO">CARLOS ADALBERTO NARDO</option>
+                        <option value="CARLOS ADRIANO DA SILVA ALVES">CARLOS ADRIANO DA SILVA ALVES</option>
+                        <option value="CARLOS ALBERTO DA SILVA BEZERRA">CARLOS ALBERTO DA SILVA BEZERRA</option>
+                        <option value="CARLOS ALBERTO DE SOUZA">CARLOS ALBERTO DE SOUZA</option>
+                        <option value="CARLOS ALBERTO TELES">CARLOS ALBERTO TELES</option>
+                        <option value="CARLOS CESAR TORASSI">CARLOS CESAR TORASSI</option>
+                        <option value="CARLOS EDUARDO FERREIRA DA SILVA">CARLOS EDUARDO FERREIRA DA SILVA</option>
+                        <option value="CARLOS H RODRIGUES">CARLOS H RODRIGUES</option>
+                        <option value="CARLOS M RODRIGUES">CARLOS M RODRIGUES</option>
+                        <option value="CARLOS MAGNO SILVA DE ANDRADE BATISTA">CARLOS MAGNO SILVA DE ANDRADE BATISTA</option>
+                        <option value="CARLOS MARQUES DE SOUZA">CARLOS MARQUES DE SOUZA</option>
+                        <option value="CARLOS PIRES DE OLIVEIRA">CARLOS PIRES DE OLIVEIRA</option>
+                        <option value="CASSIO OLIVEIRA TEXEIRA">CASSIO OLIVEIRA TEXEIRA</option>
+                        <option value="CELEI PIVA">CELEI PIVA</option>
+                        <option value="CELIO BARBOSA DA SILVA">CELIO BARBOSA DA SILVA</option>
+                        <option value="CELIO CAVALCANTE DA SILVA">CELIO CAVALCANTE DA SILVA</option>
+                        <option value="CELMAR PEREIRA DOS SANTOS">CELMAR PEREIRA DOS SANTOS</option>
+                        <option value="CELSO RICARDO SOARES DOS SANTOS">CELSO RICARDO SOARES DOS SANTOS</option>
+                        <option value="CHRISTIANO FURTADO">CHRISTIANO FURTADO</option>
+                        <option value="CICERO CORREIA DE SIQUEIRA">CICERO CORREIA DE SIQUEIRA</option>
+                        <option value="CICERO PEREIRA DA SILVA">CICERO PEREIRA DA SILVA</option>
+                        <option value="CLAUDEMIR ANTONIO DA SILVA">CLAUDEMIR ANTONIO DA SILVA</option>
+                        <option value="CLAUDEMIR BARBOZA DE OLIVEIRA">CLAUDEMIR BARBOZA DE OLIVEIRA</option>
+                        <option value="CLAUDEMIR BENTO DE ALMEIDA">CLAUDEMIR BENTO DE ALMEIDA</option>
+                        <option value="CLAUDEMIR MAGRO">CLAUDEMIR MAGRO</option>
+                        <option value="CLAUDEMIR MARANI">CLAUDEMIR MARANI</option>
+                        <option value="CLAUDIO DANIEL RIBEIRO">CLAUDIO DANIEL RIBEIRO</option>
+                        <option value="CLAUDIO DE PAULA GALVAO">CLAUDIO DE PAULA GALVAO</option>
+                        <option value="CLAUDIO DOS ANJOS BRUSTOLIN">CLAUDIO DOS ANJOS BRUSTOLIN</option>
+                        <option value="CLAUDIO GOMES DE SOUZA">CLAUDIO GOMES DE SOUZA</option>
+                        <option value="CLAUDIO JUNIOR DOS SANTOS BARBOSA">CLAUDIO JUNIOR DOS SANTOS BARBOSA</option>
+                        <option value="CLAUDIO OLIVEIRA PIRES">CLAUDIO OLIVEIRA PIRES</option>
+                        <option value="CLEBER MARTINS DE OLIVEIRA">CLEBER MARTINS DE OLIVEIRA</option>
+                        <option value="CLEDEMIR FRANCELINO DO PRADO">CLEDEMIR FRANCELINO DO PRADO</option>
+                        <option value="CLEITON FERREIRA COSTA">CLEITON FERREIRA COSTA</option>
+                        <option value="CLEITON ROSARIO DE OLIVEIRA">CLEITON ROSARIO DE OLIVEIRA</option>
+                        <option value="CLEITON TOMAZ DA COSTA">CLEITON TOMAZ DA COSTA</option>
+                        <option value="CLEYTON PINHEIRO DA SILVA">CLEYTON PINHEIRO DA SILVA</option>
+                        <option value="CRISTIANO ALVES SILVA">CRISTIANO ALVES SILVA</option>
+                        <option value="CRISTIANO BUENO DE OLIVEIRA">CRISTIANO BUENO DE OLIVEIRA</option>
+                        <option value="CRISTIANO GOBETHI DE LIMA">CRISTIANO GOBETHI DE LIMA</option>
+                        <option value="DAION SILVA LOPES">DAION SILVA LOPES</option>
+                        <option value="DAMIAO LUCIANO DE SOUZA">DAMIAO LUCIANO DE SOUZA</option>
+                        <option value="DANIEL ALBINO JUNIOR">DANIEL ALBINO JUNIOR</option>
+                        <option value="DANIEL DA SILVA LIMA">DANIEL DA SILVA LIMA</option>
+                        <option value="DANIEL DA SILVA LIRA">DANIEL DA SILVA LIRA</option>
+                        <option value="DANIEL GONÇALVES LOPES">DANIEL GONÇALVES LOPES</option>
+                        <option value="DANIEL LEITE LIMA">DANIEL LEITE LIMA</option>
+                        <option value="DANIEL SMANIOTO">DANIEL SMANIOTO</option>
+                        <option value="DARLAN DA SILVA CARDOSO">DARLAN DA SILVA CARDOSO</option>
+                        <option value="DAVI DA SILVA SANTOS">DAVI DA SILVA SANTOS</option>
+                        <option value="DAVI DE OLIVEIRA">DAVI DE OLIVEIRA</option>
+                        <option value="DAVID ROBERTO DA SILVA">DAVID ROBERTO DA SILVA</option>
+                        <option value="DEODATO DOS SANTOS MUNIZ">DEODATO DOS SANTOS MUNIZ</option>
+                        <option value="DEYVID CLEMENTE DA COSTA">DEYVID CLEMENTE DA COSTA</option>
+                        <option value="DHEMESSON CESAR SOUSA DA SILVA">DHEMESSON CESAR SOUSA DA SILVA</option>
+                        <option value="DHEMESSON CESAR SOUSA SILVA">DHEMESSON CESAR SOUSA SILVA</option>
+                        <option value="DHONATAS SANTANA RIBEIRO">DHONATAS SANTANA RIBEIRO</option>
+                        <option value="DIEGO NEGREIROS FREITAS SANTOS">DIEGO NEGREIROS FREITAS SANTOS</option>
+                        <option value="DILSON ARACELI REIS">DILSON ARACELI REIS</option>
+                        <option value="DIOGO BUENO NEVES">DIOGO BUENO NEVES</option>
+                        <option value="DIOGO RODRIGUES DOS SANTOS">DIOGO RODRIGUES DOS SANTOS</option>
+                        <option value="DIRLEY LOBO">DIRLEY LOBO</option>
+                        <option value="DIVINO APARECIDO DE SOUZA">DIVINO APARECIDO DE SOUZA</option>
+                        <option value="DIVINO MARTINS RIBEIRO">DIVINO MARTINS RIBEIRO</option>
+                        <option value="DJAIR FRANCISCO RIBEIRO">DJAIR FRANCISCO RIBEIRO</option>
+                        <option value="DORIVAL CANELOSSO">DORIVAL CANELOSSO</option>
+                        <option value="DORIVAL CARNELOSSO">DORIVAL CARNELOSSO</option>
+                        <option value="DOUGLAS ALAVARCI SOUZA">DOUGLAS ALAVARCI SOUZA</option>
+                        <option value="DOUGLAS RIBEIRO DA SILVA">DOUGLAS RIBEIRO DA SILVA</option>
+                        <option value="DURACI FRANCISCO RIBEIRO">DURACI FRANCISCO RIBEIRO</option>
+                        <option value="EDEJONCIO RIBEIRO DOS SANTOS">EDEJONCIO RIBEIRO DOS SANTOS</option>
+                        <option value="EDER SILVA SOUZA">EDER SILVA SOUZA</option>
+                        <option value="EDERSON FARIAS DE MATOS">EDERSON FARIAS DE MATOS</option>
+                        <option value="EDILSON SENA PINHEIRO">EDILSON SENA PINHEIRO</option>
+                        <option value="EDINALDO JOVINO">EDINALDO JOVINO</option>
+                        <option value="EDMAR BARROSO DA SILVA">EDMAR BARROSO DA SILVA</option>
+                        <option value="EDMAR DE AQUINO DE MENDONCA">EDMAR DE AQUINO DE MENDONCA</option>
+                        <option value="EDMAR GUERRA">EDMAR GUERRA</option>
+                        <option value="EDMILSON CARLOS RIBEIRO">EDMILSON CARLOS RIBEIRO</option>
+                        <option value="EDNALDO BORBOREMA TOLENTINO">EDNALDO BORBOREMA TOLENTINO</option>
+                        <option value="EDNALDO JOVINO">EDNALDO JOVINO</option>
+                        <option value="EDNILSON APARECIDO BENEDITO">EDNILSON APARECIDO BENEDITO</option>
+                        <option value="EDNILSON APARECIDO BNEDITO">EDNILSON APARECIDO BNEDITO</option>
+                        <option value="EDSON ALEXANDRE DA SILVA">EDSON ALEXANDRE DA SILVA</option>
+                        <option value="EDSON ALVES DE OLIVEIRA">EDSON ALVES DE OLIVEIRA</option>
+                        <option value="EDSON CABRAL">EDSON CABRAL</option>
+                        <option value="EDSON DE OLIVEIRA JUNIOR">EDSON DE OLIVEIRA JUNIOR</option>
+                        <option value="EDSON DIEGO ARAUJO E SILVA">EDSON DIEGO ARAUJO E SILVA</option>
+                        <option value="EDSON FERREIRA NUNES">EDSON FERREIRA NUNES</option>
+                        <option value="EDSON LUIS DA SILVA">EDSON LUIS DA SILVA</option>
+                        <option value="EDSON MARTINS JUNIOR">EDSON MARTINS JUNIOR</option>
+                        <option value="EDUARDO DE CASTRO OLIVEIRA">EDUARDO DE CASTRO OLIVEIRA</option>
+                        <option value="EDUARDO DE SOUSA MUNOZ PRADES">EDUARDO DE SOUSA MUNOZ PRADES</option>
+                        <option value="EDUARDO LOPES">EDUARDO LOPES</option>
+                        <option value="EDUARDO LUIS SOARES DE BARROS">EDUARDO LUIS SOARES DE BARROS</option>
+                        <option value="EDUARDO SANTOS">EDUARDO SANTOS</option>
+                        <option value="EDVAN A RODRIGUES">EDVAN A RODRIGUES</option>
+                        <option value="EDVNO B FONSECA">EDVNO B FONSECA</option>
+                        <option value="EDWARD WASILEWSKI JUNIOR">EDWARD WASILEWSKI JUNIOR</option>
+                        <option value="EDY LIMA DE OLIVEIRA">EDY LIMA DE OLIVEIRA</option>
+                        <option value="EGIDIO BARBOSA DOS SANTOS">EGIDIO BARBOSA DOS SANTOS</option>
+                        <option value="EGNALDO LISBOA">EGNALDO LISBOA</option>
+                        <option value="ELBER LEANDRO DOS REIS">ELBER LEANDRO DOS REIS</option>
+                        <option value="ELENILSON LUCIO SILVA">ELENILSON LUCIO SILVA</option>
+                        <option value="ELESSANDRO SERRAO PANTOJA">ELESSANDRO SERRAO PANTOJA</option>
+                        <option value="ELEYSSON TELES DE ARAUJO">ELEYSSON TELES DE ARAUJO</option>
+                        <option value="ELI ALVES DE FREITAS">ELI ALVES DE FREITAS</option>
+                        <option value="ELIANE BARROSO DA SILVA">ELIANE BARROSO DA SILVA</option>
+                        <option value="ELIAS BARTOLOMEU">ELIAS BARTOLOMEU</option>
+                        <option value="ELIAS FLORENTINO SANTOS">ELIAS FLORENTINO SANTOS</option>
+                        <option value="ELIAS LEONIDIO DA SILVA">ELIAS LEONIDIO DA SILVA</option>
+                        <option value="ELIAS PAULO NOGUEIRA">ELIAS PAULO NOGUEIRA</option>
+                        <option value="ELIENE BARROSO DA SILVA">ELIENE BARROSO DA SILVA</option>
+                        <option value="ELIEZER CUNHA DA SILVA">ELIEZER CUNHA DA SILVA</option>
+                        <option value="ELIO ALVES DA SILVA">ELIO ALVES DA SILVA</option>
+                        <option value="ELIOS CAITANO">ELIOS CAITANO</option>
+                        <option value="ELISABETH BASTOS">ELISABETH BASTOS</option>
+                        <option value="ELISANDRO MARTINS CLESAR">ELISANDRO MARTINS CLESAR</option>
+                        <option value="ELISMAR DE BRITO SILVA">ELISMAR DE BRITO SILVA</option>
+                        <option value="ELIZANGELO PEREIRA DA SILVA">ELIZANGELO PEREIRA DA SILVA</option>
+                        <option value="ELIZEU SOUZA RODRIGUES">ELIZEU SOUZA RODRIGUES</option>
+                        <option value="ELSIE GENUINO DA SILVA">ELSIE GENUINO DA SILVA</option>
+                        <option value="ELTHON JOSE COSTA">ELTHON JOSE COSTA</option>
+                        <option value="ELY SOUZA DE LIMA">ELY SOUZA DE LIMA</option>
+                        <option value="EMANOEL MESSIAS LUCAS DOS SANTOS">EMANOEL MESSIAS LUCAS DOS SANTOS</option>
+                        <option value="EMERSON LUIS MACKEDANZ MATTJE">EMERSON LUIS MACKEDANZ MATTJE</option>
+                        <option value="EMERSON MARTINS">EMERSON MARTINS</option>
+                        <option value="EMILIO GOULART">EMILIO GOULART</option>
+                        <option value="ENILTON ABEL DE SOUZA">ENILTON ABEL DE SOUZA</option>
+                        <option value="ENIVALDO DOS SANTOS LAURO">ENIVALDO DOS SANTOS LAURO</option>
+                        <option value="ERICK ALFRED FRANCES BELLORIN">ERICK ALFRED FRANCES BELLORIN</option>
+                        <option value="ERIK ALBERTO COSTA MIRANDA">ERIK ALBERTO COSTA MIRANDA</option>
+                        <option value="ERISMAR DIAS DA CRUZ">ERISMAR DIAS DA CRUZ</option>
+                        <option value="ERITTON LUCAS PIRES BORGES">ERITTON LUCAS PIRES BORGES</option>
+                        <option value="ERIVALDO MACHADO DE OLIVEIRA">ERIVALDO MACHADO DE OLIVEIRA</option>
+                        <option value="ERNANI JOSE VALLE">ERNANI JOSE VALLE</option>
+                        <option value="EUCLIDES RAIMUNDO CALADO FILHO">EUCLIDES RAIMUNDO CALADO FILHO</option>
+                        <option value="EUDISMAR ALMEIDA DE OLIVEIRA">EUDISMAR ALMEIDA DE OLIVEIRA</option>
+                        <option value="EVERSON SOUSA LEMOS">EVERSON SOUSA LEMOS</option>
+                        <option value="EVERTON JUNIOR VASCELLO FELTEN">EVERTON JUNIOR VASCELLO FELTEN</option>
+                        <option value="FABIANO ANTONIO DOS ANJOS">FABIANO ANTONIO DOS ANJOS</option>
+                        <option value="FABIANO INACIO DA SILVA">FABIANO INACIO DA SILVA</option>
+                        <option value="FABIO BESERRA CAVALCANTE">FABIO BESERRA CAVALCANTE</option>
+                        <option value="FABIO DE MIRANDA CABRAL">FABIO DE MIRANDA CABRAL</option>
+                        <option value="FABIO JUNER DOS REIS">FABIO JUNER DOS REIS</option>
+                        <option value="FABIO JUNIOR GOMES MATOS">FABIO JUNIOR GOMES MATOS</option>
+                        <option value="FABIO LEANDRO MARCHI">FABIO LEANDRO MARCHI</option>
+                        <option value="FABRICIO CESAR DAS NEVES FERREIRA">FABRICIO CESAR DAS NEVES FERREIRA</option>
+                        <option value="FABRICIO DO COUTO DAMASCENO">FABRICIO DO COUTO DAMASCENO</option>
+                        <option value="FELIPE LOPES FRANCO">FELIPE LOPES FRANCO</option>
+                        <option value="FELIPE NASCIMENTO ALMEIDA">FELIPE NASCIMENTO ALMEIDA</option>
+                        <option value="FERNANDA SILVEIRA DA SILVA">FERNANDA SILVEIRA DA SILVA</option>
+                        <option value="FERNANDO DE ALMEIDA ROQUE">FERNANDO DE ALMEIDA ROQUE</option>
+                        <option value="FERNANDO HENRIQUE MARTINS DE OLIVEIRA">FERNANDO HENRIQUE MARTINS DE OLIVEIRA</option>
+                        <option value="FERNANDO JULIO SILVA NOGUEIRA">FERNANDO JULIO SILVA NOGUEIRA</option>
+                        <option value="FERNANDO PEREIRA DE OLIVEIRA">FERNANDO PEREIRA DE OLIVEIRA</option>
+                        <option value="FLAVIO AUGUSTO JUSTINO">FLAVIO AUGUSTO JUSTINO</option>
+                        <option value="FLAVIO DE OLIVEIRA BINATO">FLAVIO DE OLIVEIRA BINATO</option>
+                        <option value="FLAVIO DE SOUZA">FLAVIO DE SOUZA</option>
+                        <option value="FLAVIO FLORENTINO DA CRUZ">FLAVIO FLORENTINO DA CRUZ</option>
+                        <option value="FLAVIO JOSE DE ALMEIDA CACHEADO">FLAVIO JOSE DE ALMEIDA CACHEADO</option>
+                        <option value="FLAVIO ROBERTO DA SILVA">FLAVIO ROBERTO DA SILVA</option>
+                        <option value="FLAVIO SILVA DE SALES">FLAVIO SILVA DE SALES</option>
+                        <option value="FRANCISCO ANTONIO MACHADO CORREA">FRANCISCO ANTONIO MACHADO CORREA</option>
+                        <option value="FRANCISCO CANINDE DE ARAUJO">FRANCISCO CANINDE DE ARAUJO</option>
+                        <option value="FRANCISCO DAS CHAGAS BRITO SILVA">FRANCISCO DAS CHAGAS BRITO SILVA</option>
+                        <option value="FRANCISCO DAS CHAGAS COSTA">FRANCISCO DAS CHAGAS COSTA</option>
+                        <option value="FRANCISCO DE ASSIS DA SILVA NETO">FRANCISCO DE ASSIS DA SILVA NETO</option>
+                        <option value="FRANCISCO DE OLIVEIRA PEREIRA">FRANCISCO DE OLIVEIRA PEREIRA</option>
+                        <option value="FRANCISCO DOS SANTOS">FRANCISCO DOS SANTOS</option>
+                        <option value="FRANCISCO EVERSON FERREIRA BARROS">FRANCISCO EVERSON FERREIRA BARROS</option>
+                        <option value="FRANCISCO EVERSON SOUZA LEITAO">FRANCISCO EVERSON SOUZA LEITAO</option>
+                        <option value="FRANCISCO FRANCINILDO DE MELO SILVA">FRANCISCO FRANCINILDO DE MELO SILVA</option>
+                        <option value="FRANCISCO RICARDO TOME SOUZA">FRANCISCO RICARDO TOME SOUZA</option>
+                        <option value="FRANCISCO SANTOS DE LIMA">FRANCISCO SANTOS DE LIMA</option>
+                        <option value="FRANCISCO TADEU DAS CHAGAS SANTOS">FRANCISCO TADEU DAS CHAGAS SANTOS</option>
+                        <option value="FRANKLIN DARIO VARGAS SEQUERA">FRANKLIN DARIO VARGAS SEQUERA</option>
+                        <option value="GABRIEL FERNANDES ARAUJO DE JESUS">GABRIEL FERNANDES ARAUJO DE JESUS</option>
+                        <option value="GABRIEL ODAIR ROSA">GABRIEL ODAIR ROSA</option>
+                        <option value="GABRIEL PRADO RIOS">GABRIEL PRADO RIOS</option>
+                        <option value="GEANDRI DE ARAUJO SILVA">GEANDRI DE ARAUJO SILVA</option>
+                        <option value="GELCIMAR JOSE BARTASSON">GELCIMAR JOSE BARTASSON</option>
+                        <option value="GELSON MORAES RAMOS">GELSON MORAES RAMOS</option>
+                        <option value="GENILSON BACELAR DOS SANTOS">GENILSON BACELAR DOS SANTOS</option>
+                        <option value="GENIVAL DA SILVA">GENIVAL DA SILVA</option>
+                        <option value="GEOVANE MEIRA">GEOVANE MEIRA</option>
+                        <option value="GERALDO MARTINS ARAUJO JUNIOR">GERALDO MARTINS ARAUJO JUNIOR</option>
+                        <option value="GERALDO VILAR DE MEDEIROS">GERALDO VILAR DE MEDEIROS</option>
+                        <option value="GERSON ROBERTO DUTRA">GERSON ROBERTO DUTRA</option>
+                        <option value="GILBERTO MARTINS MAIRENA">GILBERTO MARTINS MAIRENA</option>
+                        <option value="GILBERTO VIEIRA BLASBERG DA SILVA">GILBERTO VIEIRA BLASBERG DA SILVA</option>
+                        <option value="GILDEVAM DE MORAIS LIMA">GILDEVAM DE MORAIS LIMA</option>
+                        <option value="GILDEVAN DA SILVA SOUSA">GILDEVAN DA SILVA SOUSA</option>
+                        <option value="GILDOMAR SOARES">GILDOMAR SOARES</option>
+                        <option value="GILMAR DA SILVA">GILMAR DA SILVA</option>
+                        <option value="GILMAR DE SOUZA NUNES">GILMAR DE SOUZA NUNES</option>
+                        <option value="GILMAR GOMES DE ANDRADE">GILMAR GOMES DE ANDRADE</option>
+                        <option value="GILSON DOS SANTOS CARMO">GILSON DOS SANTOS CARMO</option>
+                        <option value="GILSON JOSE DE OLIVEIRA">GILSON JOSE DE OLIVEIRA</option>
+                        <option value="GILSON LEAL">GILSON LEAL</option>
+                        <option value="GIULIANO CLAYTON PEREIRA LOPES">GIULIANO CLAYTON PEREIRA LOPES</option>
+                        <option value="GLAISON FERREIRA DA SILVA">GLAISON FERREIRA DA SILVA</option>
+                        <option value="GUILHERME DE OLIVEIRA">GUILHERME DE OLIVEIRA</option>
+                        <option value="GUTEMBERG SANTOS CRUZ">GUTEMBERG SANTOS CRUZ</option>
+                        <option value="HEBERTH BEZERRA DOS SANTOS">HEBERTH BEZERRA DOS SANTOS</option>
+                        <option value="HELBERT DE JESUS PEREIRA FREIRE">HELBERT DE JESUS PEREIRA FREIRE</option>
+                        <option value="HELCIO RODRIGUES DA SILVA">HELCIO RODRIGUES DA SILVA</option>
+                        <option value="HELENO MARCOS DOS REIS COSTA">HELENO MARCOS DOS REIS COSTA</option>
+                        <option value="HELIO RAMOS DE OLIVEIRA BRASIL">HELIO RAMOS DE OLIVEIRA BRASIL</option>
+                        <option value="HERITON VILAS BOAS SANTOS">HERITON VILAS BOAS SANTOS</option>
+                        <option value="HERLIS VIEIRA RODRIGUES">HERLIS VIEIRA RODRIGUES</option>
+                        <option value="HERMES DA SILVA MELO">HERMES DA SILVA MELO</option>
+                        <option value="HUMBERTO FLORENTINO FARAMILIO JUNIOR">HUMBERTO FLORENTINO FARAMILIO JUNIOR</option>
+                        <option value="IGOR EDUARDO LOPES">IGOR EDUARDO LOPES</option>
+                        <option value="IGOR FERNANDO SANTOS ROSA">IGOR FERNANDO SANTOS ROSA</option>
+                        <option value="IGOR MATHEUS SETIM">IGOR MATHEUS SETIM</option>
+                        <option value="ILTON NEGREIRO DOS SANTOS">ILTON NEGREIRO DOS SANTOS</option>
+                        <option value="IRINEU PEREIRA PINTO">IRINEU PEREIRA PINTO</option>
+                        <option value="ISAAC BARROS DA SILVA">ISAAC BARROS DA SILVA</option>
+                        <option value="ISAAC DO VALE SOUSA">ISAAC DO VALE SOUSA</option>
+                        <option value="ISAC DO VALE SOUZA">ISAC DO VALE SOUZA</option>
+                        <option value="ISMAEL DOS NASCIMENTO OLIVEIRA">ISMAEL DOS NASCIMENTO OLIVEIRA</option>
+                        <option value="ISRAEL CESAR VASCONCELOS SOUSA">ISRAEL CESAR VASCONCELOS SOUSA</option>
+                        <option value="IVANILDO DO NASCIMENTO BATISTA">IVANILDO DO NASCIMENTO BATISTA</option>
+                        <option value="IVANILDO SANTOS BEZERRA">IVANILDO SANTOS BEZERRA</option>
+                        <option value="JACKSON LABIS MELO">JACKSON LABIS MELO</option>
+                        <option value="JACKSY ALMEIDA DE ASSIS">JACKSY ALMEIDA DE ASSIS</option>
+                        <option value="JACO NICOLAU FOLLMANN">JACO NICOLAU FOLLMANN</option>
+                        <option value="JAILSON AQUILA DA SILVA">JAILSON AQUILA DA SILVA</option>
+                        <option value="JAINO RIBEIRO MARTINS">JAINO RIBEIRO MARTINS</option>
+                        <option value="JAIR CARVALHO DE OLIVEIRA">JAIR CARVALHO DE OLIVEIRA</option>
+                        <option value="JAIRO JOSE DOS SANTOS">JAIRO JOSE DOS SANTOS</option>
+                        <option value="JAIRON ANTONIO DA SILVA">JAIRON ANTONIO DA SILVA</option>
+                        <option value="JAMESON COSTA NEVES">JAMESON COSTA NEVES</option>
+                        <option value="JAMIL CARNEIRO DE SOUSA">JAMIL CARNEIRO DE SOUSA</option>
+                        <option value="JANIS JOSE DE OLIVEIRA">JANIS JOSE DE OLIVEIRA</option>
+                        <option value="JEAN CARLOS DUARTE">JEAN CARLOS DUARTE</option>
+                        <option value="JEFERSON APARECIDO DA SILVA">JEFERSON APARECIDO DA SILVA</option>
+                        <option value="JEFERSON CLINTON RODRIGUES DE OLIVEIRA">JEFERSON CLINTON RODRIGUES DE OLIVEIRA</option>
+                        <option value="JEFERSON ROBERTO PEREIRA">JEFERSON ROBERTO PEREIRA</option>
+                        <option value="JEFFERSON DOS ANJOS PEREIRA">JEFFERSON DOS ANJOS PEREIRA</option>
+                        <option value="JEOVANIO DAVID FERREIRA">JEOVANIO DAVID FERREIRA</option>
+                        <option value="JERSON MARTINS DE OLIVEIRA">JERSON MARTINS DE OLIVEIRA</option>
+                        <option value="JESIEL FRANCISCO DE SOUZA">JESIEL FRANCISCO DE SOUZA</option>
+                        <option value="JHONATA LUCIANO SANTOS DA SILVA">JHONATA LUCIANO SANTOS DA SILVA</option>
+                        <option value="JHONY CLEVERTON LOIOLA">JHONY CLEVERTON LOIOLA</option>
+                        <option value="JHONY LUCAS">JHONY LUCAS</option>
+                        <option value="JOAO BATISTA DE SOUSA">JOAO BATISTA DE SOUSA</option>
+                        <option value="JOAO BATISTA MATIAS DE VASCONCELOS">JOAO BATISTA MATIAS DE VASCONCELOS</option>
+                        <option value="JOAO BEZERRA DA ROCHA FILHO">JOAO BEZERRA DA ROCHA FILHO</option>
+                        <option value="JOAO CARLOS DA SILVA">JOAO CARLOS DA SILVA</option>
+                        <option value="JOAO CLAUDIO CABRAL">JOAO CLAUDIO CABRAL</option>
+                        <option value="JOAO DAVID CARDOSO MONTEIRO">JOAO DAVID CARDOSO MONTEIRO</option>
+                        <option value="JOAO EVANGELISTA FLORENCIO">JOAO EVANGELISTA FLORENCIO</option>
+                        <option value="JOAO GABRIEL S DA SILVA">JOAO GABRIEL S DA SILVA</option>
+                        <option value="JOAO ORISVALDO PUTTI">JOAO ORISVALDO PUTTI</option>
+                        <option value="JOAO PAULO CONSTANTINO">JOAO PAULO CONSTANTINO</option>
+                        <option value="JOAO PAULO DA SILVA">JOAO PAULO DA SILVA</option>
+                        <option value="JOÃO PAULO DE JESUS">JOÃO PAULO DE JESUS</option>
+                        <option value="JOAO PAULO DE OLIVEIRA">JOAO PAULO DE OLIVEIRA</option>
+                        <option value="JOAO PAULO DO ROSARIO">JOAO PAULO DO ROSARIO</option>
+                        <option value="JOAO PEDRO LELIS DE PONTES">JOAO PEDRO LELIS DE PONTES</option>
+                        <option value="JOÃO VICTOR DA GAMA LENTZ">JOÃO VICTOR DA GAMA LENTZ</option>
+                        <option value="JOAO VITOS DE S ANTUNES">JOAO VITOS DE S ANTUNES</option>
+                        <option value="JOAQUIM ALVES DE ARAUJO NETO">JOAQUIM ALVES DE ARAUJO NETO</option>
+                        <option value="JOAS BRISOLA DE OLIVEIRA">JOAS BRISOLA DE OLIVEIRA</option>
+                        <option value="JOCELIO FERNANDES ROCHA">JOCELIO FERNANDES ROCHA</option>
+                        <option value="JOCELIO FERNANDEZ ROCHA">JOCELIO FERNANDEZ ROCHA</option>
+                        <option value="JOELANDIO MACEDO DOS REIS">JOELANDIO MACEDO DOS REIS</option>
+                        <option value="JOELSON BORGES DE LIMA">JOELSON BORGES DE LIMA</option>
+                        <option value="JOILSON MARCOS DE PAULA">JOILSON MARCOS DE PAULA</option>
+                        <option value="JONAS EDUARDO ALVES DA SILVA">JONAS EDUARDO ALVES DA SILVA</option>
+                        <option value="JONATAN R SILVA">JONATAN R SILVA</option>
+                        <option value="JONATHAN GONCALVES RAULINO">JONATHAN GONCALVES RAULINO</option>
+                        <option value="JONINSON RAMOS DE OLIVEIRA">JONINSON RAMOS DE OLIVEIRA</option>
+                        <option value="JORGE RUFINO SANTOS VARELA">JORGE RUFINO SANTOS VARELA</option>
+                        <option value="JORGE VOEL VIDAL SALAZAR">JORGE VOEL VIDAL SALAZAR</option>
+                        <option value="JORGE YOEL VIDAL SALAZAR">JORGE YOEL VIDAL SALAZAR</option>
+                        <option value="JORGENALDO MOURA DE AQUINO">JORGENALDO MOURA DE AQUINO</option>
+                        <option value="JOSANEI ALVES DOS REIS">JOSANEI ALVES DOS REIS</option>
+                        <option value="JOSE ADALTO DA SILVA">JOSE ADALTO DA SILVA</option>
+                        <option value="JOSE AFONSO ROMERO">JOSE AFONSO ROMERO</option>
+                        <option value="JOSE ALLEF OLIVEIRA SOUSA SANTOS">JOSE ALLEF OLIVEIRA SOUSA SANTOS</option>
+                        <option value="JOSE ANCELMO RODRIGUES DE OLIVEIRA">JOSE ANCELMO RODRIGUES DE OLIVEIRA</option>
+                        <option value="JOSE ANILTON DOS SANTOS">JOSE ANILTON DOS SANTOS</option>
+                        <option value="JOSE ANSELMO DOS SANTOS FERREIRA">JOSE ANSELMO DOS SANTOS FERREIRA</option>
+                        <option value="JOSE ANTONIO CESARIO">JOSE ANTONIO CESARIO</option>
+                        <option value="JOSE APARECIDO">JOSE APARECIDO</option>
+                        <option value="JOSE APARECIDO DA SILVA">JOSE APARECIDO DA SILVA</option>
+                        <option value="JOSE ARNALDO BISPO DOS SANTOS">JOSE ARNALDO BISPO DOS SANTOS</option>
+                        <option value="JOSE BRAS PELITO">JOSE BRAS PELITO</option>
+                        <option value="JOSE CARLOS ALMEIDA DOS REIS">JOSE CARLOS ALMEIDA DOS REIS</option>
+                        <option value="JOSE CARLOS CORTE LEAL">JOSE CARLOS CORTE LEAL</option>
+                        <option value="JOSE CARLOS DA SILVA">JOSE CARLOS DA SILVA</option>
+                        <option value="JOSE CARLOS DANTAS DA SILVA">JOSE CARLOS DANTAS DA SILVA</option>
+                        <option value="JOSE CARLOS DOS SANTOS">JOSE CARLOS DOS SANTOS</option>
+                        <option value="JOSE CARLOS LEAL">JOSE CARLOS LEAL</option>
+                        <option value="JOSE CARLOS MARTINS">JOSE CARLOS MARTINS</option>
+                        <option value="JOSE CICERO SILVINO DA SILVA">JOSE CICERO SILVINO DA SILVA</option>
+                        <option value="JOSE CLAUDEVAN DA SILVA TORRES">JOSE CLAUDEVAN DA SILVA TORRES</option>
+                        <option value="JOSE CLEYTON ALVES DE OLIVEIRA">JOSE CLEYTON ALVES DE OLIVEIRA</option>
+                        <option value="JOSE DIAS TOLEDO NETO">JOSE DIAS TOLEDO NETO</option>
+                        <option value="JOSE DONIZETE">JOSE DONIZETE</option>
+                        <option value="JOSE EDIVAN SOARES SANTANA">JOSE EDIVAN SOARES SANTANA</option>
+                        <option value="JOSE EUCLIDES FILHO">JOSE EUCLIDES FILHO</option>
+                        <option value="JOSE EXPEDITO DA SILVA">JOSE EXPEDITO DA SILVA</option>
+                        <option value="JOSE FERNANDO DANTAS FILHO">JOSE FERNANDO DANTAS FILHO</option>
+                        <option value="JOSE FRANCISCO DA SILVA BARRETO JUNIOR">JOSE FRANCISCO DA SILVA BARRETO JUNIOR</option>
+                        <option value="JOSE FRANCISCO DE ASSIS">JOSE FRANCISCO DE ASSIS</option>
+                        <option value="JOSE GENIVAL CORDEIRO DOS SANTOS">JOSE GENIVAL CORDEIRO DOS SANTOS</option>
+                        <option value="JOSE GERALDO LOPES LUCIANO">JOSE GERALDO LOPES LUCIANO</option>
+                        <option value="JOSE HELIOMAR LIMA DOS SANTOS">JOSE HELIOMAR LIMA DOS SANTOS</option>
+                        <option value="JOSE HENRIQUE CARDOSO">JOSE HENRIQUE CARDOSO</option>
+                        <option value="JOSE HENRIQUE LIMA LOPES">JOSE HENRIQUE LIMA LOPES</option>
+                        <option value="JOSE IZACLEUSON SILVE COSTA">JOSE IZACLEUSON SILVE COSTA</option>
+                        <option value="JOSE KENNED LEAL DA SILVA">JOSE KENNED LEAL DA SILVA</option>
+                        <option value="JOSE LEANDRO AGUIAR">JOSE LEANDRO AGUIAR</option>
+                        <option value="JOSE LUIZ DOS SANTOS">JOSE LUIZ DOS SANTOS</option>
+                        <option value="JOSE LUIZ PIRES">JOSE LUIZ PIRES</option>
+                        <option value="JOSE MARIA DA SILVA FILHO">JOSE MARIA DA SILVA FILHO</option>
+                        <option value="JOSE MAURICIO DA COSTA JUNIOR">JOSE MAURICIO DA COSTA JUNIOR</option>
+                        <option value="JOSE NETO FERREIRA DA SILVA">JOSE NETO FERREIRA DA SILVA</option>
+                        <option value="JOSE OLIVEIRA DE PAULA">JOSE OLIVEIRA DE PAULA</option>
+                        <option value="JOSE OSMAR MORAES">JOSE OSMAR MORAES</option>
+                        <option value="JOSE P NETO">JOSE P NETO</option>
+                        <option value="JOSE RIBAMAR DA SILVA SOUZA">JOSE RIBAMAR DA SILVA SOUZA</option>
+                        <option value="JOSE RICARDO SANTANA PEREIRA">JOSE RICARDO SANTANA PEREIRA</option>
+                        <option value="JOSE ROBERTO FIGUEIREDO">JOSE ROBERTO FIGUEIREDO</option>
+                        <option value="JOSE ROBERTO GUERINO">JOSE ROBERTO GUERINO</option>
+                        <option value="JOSE RODRIGUES DE SANTANA">JOSE RODRIGUES DE SANTANA</option>
+                        <option value="JOSE RODRIGUES DE SOUSA">JOSE RODRIGUES DE SOUSA</option>
+                        <option value="JOSE RUBENS FERREIRA">JOSE RUBENS FERREIRA</option>
+                        <option value="JOSE RUBENS S ALVES">JOSE RUBENS S ALVES</option>
+                        <option value="JOSE SEBASTIAO DA SILVA">JOSE SEBASTIAO DA SILVA</option>
+                        <option value="JOSE UANDERSON DA SILVA">JOSE UANDERSON DA SILVA</option>
+                        <option value="JOSE VALENCA PEREIRA">JOSE VALENCA PEREIRA</option>
+                        <option value="JOSE VANDERLY HELMER">JOSE VANDERLY HELMER</option>
+                        <option value="JOSE VANILSON RIBEIRO FERREIRA">JOSE VANILSON RIBEIRO FERREIRA</option>
+                        <option value="JOSIAS DA SILVA LIMA">JOSIAS DA SILVA LIMA</option>
+                        <option value="JOSIAS FURTADO DE JESUS">JOSIAS FURTADO DE JESUS</option>
+                        <option value="JOSIMAR NUNES DA SILVA">JOSIMAR NUNES DA SILVA</option>
+                        <option value="JOSIVALDO JOSE DA SILVA">JOSIVALDO JOSE DA SILVA</option>
+                        <option value="JOVENIL MARTINS">JOVENIL MARTINS</option>
+                        <option value="JUAREUDO SANTIAGO DE SOUSA">JUAREUDO SANTIAGO DE SOUSA</option>
+                        <option value="JUCILANDY DA SILVA COSTA">JUCILANDY DA SILVA COSTA</option>
+                        <option value="JULIO CESAR ANTUNES">JULIO CESAR ANTUNES</option>
+                        <option value="JULIO CEZAR SANTOS NASCIMENTO">JULIO CEZAR SANTOS NASCIMENTO</option>
+                        <option value="JULIO CEZAR SILVA LISBOA">JULIO CEZAR SILVA LISBOA</option>
+                        <option value="KAIRO DA SILVA LIMA">KAIRO DA SILVA LIMA</option>
+                        <option value="KAUAN GABRIEL DO NASCIMENTO">KAUAN GABRIEL DO NASCIMENTO</option>
+                        <option value="KELYSSON MOTA PIMENTEL">KELYSSON MOTA PIMENTEL</option>
+                        <option value="KLEBER RUAS TORRES">KLEBER RUAS TORRES</option>
+                        <option value="LAERCE ARAUJO DOS SANTOS">LAERCE ARAUJO DOS SANTOS</option>
+                        <option value="LAILSON ALVES SAMPAIO">LAILSON ALVES SAMPAIO</option>
+                        <option value="LAUDISLEI DE MORAES SALES">LAUDISLEI DE MORAES SALES</option>
+                        <option value="LAURO CESAR FUMO">LAURO CESAR FUMO</option>
+                        <option value="LEAL JOSE CARLOS">LEAL JOSE CARLOS</option>
+                        <option value="LEANDRO ALMEIDA">LEANDRO ALMEIDA</option>
+                        <option value="LEANDRO PEREIRA PINTO">LEANDRO PEREIRA PINTO</option>
+                        <option value="LEDA DE CASSIA DA SILVA MIGUEL">LEDA DE CASSIA DA SILVA MIGUEL</option>
+                        <option value="LENILSON JOSE DALAQUA">LENILSON JOSE DALAQUA</option>
+                        <option value="LEONARDO ADEMIR DA ROCHA FOLIMANN">LEONARDO ADEMIR DA ROCHA FOLIMANN</option>
+                        <option value="LESSONIE DURIGON VARELA">LESSONIE DURIGON VARELA</option>
+                        <option value="LIDIO PATROCINIO">LIDIO PATROCINIO</option>
+                        <option value="LOANA CRISTINA BATISTA DA SILVA">LOANA CRISTINA BATISTA DA SILVA</option>
+                        <option value="LORIVAL PEREIRA VIEIRA">LORIVAL PEREIRA VIEIRA</option>
+                        <option value="LOURECINO JOSE DOS SANTOS">LOURECINO JOSE DOS SANTOS</option>
+                        <option value="LOURIVAN ANTONIO BORGES">LOURIVAN ANTONIO BORGES</option>
+                        <option value="LUANA FERNANDES PATROCINIO">LUANA FERNANDES PATROCINIO</option>
+                        <option value="LUCAS DA SILVA RODRIGUES">LUCAS DA SILVA RODRIGUES</option>
+                        <option value="LUCAS GUILHERME FRANÇA DE OLIVEIRA">LUCAS GUILHERME FRANÇA DE OLIVEIRA</option>
+                        <option value="LUCIANA GUEDES DE ARUJO">LUCIANA GUEDES DE ARUJO</option>
+                        <option value="LUCIANO AUGUSTO DOMINGUES">LUCIANO AUGUSTO DOMINGUES</option>
+                        <option value="LUCIANO DO O DA CRUZ">LUCIANO DO O DA CRUZ</option>
+                        <option value="LUCIANO GOMES VIEIRA">LUCIANO GOMES VIEIRA</option>
+                        <option value="LUCIANO TEIXEIRA DA SILVA">LUCIANO TEIXEIRA DA SILVA</option>
+                        <option value="LUDIO BATISTA GARCIA">LUDIO BATISTA GARCIA</option>
+                        <option value="LUDMAR APARECIDO LUIZ">LUDMAR APARECIDO LUIZ</option>
+                        <option value="LUIS ANTONIO GRAFFE MELENDEZ">LUIS ANTONIO GRAFFE MELENDEZ</option>
+                        <option value="LUIS ANTONIO MARCANO CASTILLO">LUIS ANTONIO MARCANO CASTILLO</option>
+                        <option value="LUIS CARLOS FERNANDES">LUIS CARLOS FERNANDES</option>
+                        <option value="LUIS CARLOS RODRIGUES DA COSTA">LUIS CARLOS RODRIGUES DA COSTA</option>
+                        <option value="LUIS CLAUDIO BRANDÃO DO NASCIMENTO">LUIS CLAUDIO BRANDÃO DO NASCIMENTO</option>
+                        <option value="LUIS EDUARDO BEJARANO ABACHE">LUIS EDUARDO BEJARANO ABACHE</option>
+                        <option value="LUIS EDUARDO BEJARANO GUERRA">LUIS EDUARDO BEJARANO GUERRA</option>
+                        <option value="LUIS JORGE FERREIRA DE MOURA">LUIS JORGE FERREIRA DE MOURA</option>
+                        <option value="LUIS RICARDO LISBOA">LUIS RICARDO LISBOA</option>
+                        <option value="LUIS ROBERTO VIERIA">LUIS ROBERTO VIERIA</option>
+                        <option value="LUIZ AUGUSTO VILLAIN FILHO">LUIZ AUGUSTO VILLAIN FILHO</option>
+                        <option value="LUIZ DE OLIVEIRA">LUIZ DE OLIVEIRA</option>
+                        <option value="LUIZ FABIO DE O SOUZA">LUIZ FABIO DE O SOUZA</option>
+                        <option value="LUIZ FELIPE PERAO">LUIZ FELIPE PERAO</option>
+                        <option value="LUIZ FERNANDO CARVALHO">LUIZ FERNANDO CARVALHO</option>
+                        <option value="LUIZ FERNANDO MARTINHO DE ARAUJO JUNIOR">LUIZ FERNANDO MARTINHO DE ARAUJO JUNIOR</option>
+                        <option value="LUIZ HENKER">LUIZ HENKER</option>
+                        <option value="LUIZ PAULO MIRANDA">LUIZ PAULO MIRANDA</option>
+                        <option value="LUIZ ROBERTO PLATERO GIMENES">LUIZ ROBERTO PLATERO GIMENES</option>
+                        <option value="LUIZ VIEIRA DO NASCIMENTO NETO">LUIZ VIEIRA DO NASCIMENTO NETO</option>
+                        <option value="MACKSOEL ESPINOLA LACKMANN">MACKSOEL ESPINOLA LACKMANN</option>
+                        <option value="MAICON CASTRO DOMINGUES">MAICON CASTRO DOMINGUES</option>
+                        <option value="MAIKON DA SILVA ARAUJO">MAIKON DA SILVA ARAUJO</option>
+                        <option value="MAIKON HARRAS BASTOS">MAIKON HARRAS BASTOS</option>
+                        <option value="MALNEI REGINALDO RAMOS">MALNEI REGINALDO RAMOS</option>
+                        <option value="MANOEL ANESIO NEVES DA MOTA">MANOEL ANESIO NEVES DA MOTA</option>
+                        <option value="MANOEL CARLOS LOPES">MANOEL CARLOS LOPES</option>
+                        <option value="MANOEL ESTHEFESON LEITE MOTTA">MANOEL ESTHEFESON LEITE MOTTA</option>
+                        <option value="MANOEL FLORIANO VIEIRA DA CUNHA">MANOEL FLORIANO VIEIRA DA CUNHA</option>
+                        <option value="MARCELINO MARTINS DE SOUSA">MARCELINO MARTINS DE SOUSA</option>
+                        <option value="MARCELO ALVES MOREIRA">MARCELO ALVES MOREIRA</option>
+                        <option value="MARCELO BARBOSA RODRIGUES">MARCELO BARBOSA RODRIGUES</option>
+                        <option value="MARCELO DA SILVA FERREIRA">MARCELO DA SILVA FERREIRA</option>
+                        <option value="MARCELO FONTES DA SILVA">MARCELO FONTES DA SILVA</option>
+                        <option value="MARCELO JOAQUIM DE LIMA">MARCELO JOAQUIM DE LIMA</option>
+                        <option value="MARCELO LAUDIVAN MICHELETTO GRILO">MARCELO LAUDIVAN MICHELETTO GRILO</option>
+                        <option value="MARCELO MENDES VIEIRA">MARCELO MENDES VIEIRA</option>
+                        <option value="MARCELO OLIVEIRA ARAÚJO">MARCELO OLIVEIRA ARAÚJO</option>
+                        <option value="MARCELO OLIVEIRA TEIXEIRA">MARCELO OLIVEIRA TEIXEIRA</option>
+                        <option value="MARCELO PEREIRA">MARCELO PEREIRA</option>
+                        <option value="MARCELO PIRES DA SILVA">MARCELO PIRES DA SILVA</option>
+                        <option value="MARCELO PONTES SILVA">MARCELO PONTES SILVA</option>
+                        <option value="MARCELO SANTOS ATHAYDE">MARCELO SANTOS ATHAYDE</option>
+                        <option value="MARCELO SANTOS DE ARAUJO">MARCELO SANTOS DE ARAUJO</option>
+                        <option value="MARCELO SILVA COSTA">MARCELO SILVA COSTA</option>
+                        <option value="MARCELO SOARES">MARCELO SOARES</option>
+                        <option value="MARCIEL DOS SANTOS FREITAS">MARCIEL DOS SANTOS FREITAS</option>
+                        <option value="MARCIO JOSE FORZA">MARCIO JOSE FORZA</option>
+                        <option value="MARCIO LUIZ MENTA">MARCIO LUIZ MENTA</option>
+                        <option value="MARCIO RAMOS DE SOUZA">MARCIO RAMOS DE SOUZA</option>
+                        <option value="MARCOS ANTONIO DA SILVA">MARCOS ANTONIO DA SILVA</option>
+                        <option value="MARCOS ANTONIO LUCIANO">MARCOS ANTONIO LUCIANO</option>
+                        <option value="MARCOS BEZERRA DA SILVA">MARCOS BEZERRA DA SILVA</option>
+                        <option value="MARCOS BRANDAO SERRAO">MARCOS BRANDAO SERRAO</option>
+                        <option value="MARCOS CHARLES NUNES BRANDAO">MARCOS CHARLES NUNES BRANDAO</option>
+                        <option value="MARCOS DE SOUZA">MARCOS DE SOUZA</option>
+                        <option value="MARCOS ROBERTO">MARCOS ROBERTO</option>
+                        <option value="MARCOS SOUZA DA SILVA">MARCOS SOUZA DA SILVA</option>
+                        <option value="MARCUS VINICIUS DE ALMEIDA SOUZA BARTASSON">MARCUS VINICIUS DE ALMEIDA SOUZA BARTASSON</option>
+                        <option value="MARIO COSTA">MARIO COSTA</option>
+                        <option value="MARIO DA SILVA BORGES">MARIO DA SILVA BORGES</option>
+                        <option value="MARIO GOMES DA ROCHA">MARIO GOMES DA ROCHA</option>
+                        <option value="MARIO SERGIO JARDIM">MARIO SERGIO JARDIM</option>
+                        <option value="MARIO SERGIO NAVARRO">MARIO SERGIO NAVARRO</option>
+                        <option value="MATHEUS R BRONETTI">MATHEUS R BRONETTI</option>
+                        <option value="MAURI PAULO MACHADO">MAURI PAULO MACHADO</option>
+                        <option value="MAURI SCHOPAN">MAURI SCHOPAN</option>
+                        <option value="MAURICIO VARGAS DOS SANTOS">MAURICIO VARGAS DOS SANTOS</option>
+                        <option value="MAURO SERGIO FROTA DA SILVA">MAURO SERGIO FROTA DA SILVA</option>
+                        <option value="MAXIMINIANO PEDRO GOMES">MAXIMINIANO PEDRO GOMES</option>
+                        <option value="MAXIMO MARTINS DA SILVA">MAXIMO MARTINS DA SILVA</option>
+                        <option value="MAYCOM NOGUEIRA SENA">MAYCOM NOGUEIRA SENA</option>
+                        <option value="MAYCON CONCEICAO LAVAREDA DE LIMA">MAYCON CONCEICAO LAVAREDA DE LIMA</option>
+                        <option value="MELCHIOR JOSE ROSAS QUINTANA">MELCHIOR JOSE ROSAS QUINTANA</option>
+                        <option value="MERIVAL ALVES DE ARAUJO">MERIVAL ALVES DE ARAUJO</option>
+                        <option value="MICAEL RODOLFO CINTRA SILVA">MICAEL RODOLFO CINTRA SILVA</option>
+                        <option value="MICHAEL DE SOUSAS ROSAS">MICHAEL DE SOUSAS ROSAS</option>
+                        <option value="MICHAEL ROQUE DE MATOS">MICHAEL ROQUE DE MATOS</option>
+                        <option value="MICHEL APARECIDO GALVAO">MICHEL APARECIDO GALVAO</option>
+                        <option value="MICHEL DE ARAUJO FERREIRA">MICHEL DE ARAUJO FERREIRA</option>
+                        <option value="MIGUEL JOSE SOARES">MIGUEL JOSE SOARES</option>
+                        <option value="MIGUEL PINHEIRO DUARTE NETO">MIGUEL PINHEIRO DUARTE NETO</option>
+                        <option value="MILTON DO ESPIRITO SANTO">MILTON DO ESPIRITO SANTO</option>
+                        <option value="MILTON DOS SANTOS">MILTON DOS SANTOS</option>
+                        <option value="MILTON PEREIRA SOBRINHO">MILTON PEREIRA SOBRINHO</option>
+                        <option value="MOACIR JONAS CARBONI MADEIRA">MOACIR JONAS CARBONI MADEIRA</option>
+                        <option value="MOISES BATISTA">MOISES BATISTA</option>
+                        <option value="MOISES CARVALHO DA SILVA">MOISES CARVALHO DA SILVA</option>
+                        <option value="MOT. NÃO CADASTRADO">MOT. NÃO CADASTRADO</option>
+                        <option value="MURILO RIBEIRO DA SILVA">MURILO RIBEIRO DA SILVA</option>
+                        <option value="NAILTON ROSA DE OLIVEIRA">NAILTON ROSA DE OLIVEIRA</option>
+                        <option value="NEY FERREIRA">NEY FERREIRA</option>
+                        <option value="NICOLAS AUGUSTO ROCHA">NICOLAS AUGUSTO ROCHA</option>
+                        <option value="NILSON FELIPE SANTIAGO">NILSON FELIPE SANTIAGO</option>
+                        <option value="NILSON LUZETE">NILSON LUZETE</option>
+                        <option value="NIVALDO DE OLIVEIRA">NIVALDO DE OLIVEIRA</option>
+                        <option value="NIVALDO DE SOUSA VIEIRA">NIVALDO DE SOUSA VIEIRA</option>
+                        <option value="NIVALDO OLIVEIRA DA PAIXAO">NIVALDO OLIVEIRA DA PAIXAO</option>
+                        <option value="NIZOMAR DA SILVA DANTAS">NIZOMAR DA SILVA DANTAS</option>
+                        <option value="NOEDI DE JESUS TOLEDO">NOEDI DE JESUS TOLEDO</option>
+                        <option value="ONILTON ESTEVES DOS SANTOS">ONILTON ESTEVES DOS SANTOS</option>
+                        <option value="OSVALDO APARECIDO MAIRENA">OSVALDO APARECIDO MAIRENA</option>
+                        <option value="OSWALDO DE ARAGÃO SILVA">OSWALDO DE ARAGÃO SILVA</option>
+                        <option value="PATRICIA CAMPOS PINTO">PATRICIA CAMPOS PINTO</option>
+                        <option value="PATRICK ALVES PEIXOTO">PATRICK ALVES PEIXOTO</option>
+                        <option value="PATRICK CORTINA MOREIRA">PATRICK CORTINA MOREIRA</option>
+                        <option value="PATRICK J WASLO">PATRICK J WASLO</option>
+                        <option value="PAULO AMARO DA CRUZ">PAULO AMARO DA CRUZ</option>
+                        <option value="PAULO BRUNO DA SILVA SENA">PAULO BRUNO DA SILVA SENA</option>
+                        <option value="PAULO CESAR RODRIGUES DE OLIVEIRA">PAULO CESAR RODRIGUES DE OLIVEIRA</option>
+                        <option value="PAULO CESAR SARAIVA BARBOSA">PAULO CESAR SARAIVA BARBOSA</option>
+                        <option value="PAULO CEZAR ARAUJO">PAULO CEZAR ARAUJO</option>
+                        <option value="PAULO FERNANDO BEZERRA DE SOUZA">PAULO FERNANDO BEZERRA DE SOUZA</option>
+                        <option value="PAULO HENRIQUE ALVES CRUZ">PAULO HENRIQUE ALVES CRUZ</option>
+                        <option value="PAULO HENRIQUE RIBEIRO">PAULO HENRIQUE RIBEIRO</option>
+                        <option value="PAULO HENRIQUE RIBEIRO MASSARICO">PAULO HENRIQUE RIBEIRO MASSARICO</option>
+                        <option value="PAULO HENRIQUE VIDAL DE SOUZA LIMA">PAULO HENRIQUE VIDAL DE SOUZA LIMA</option>
+                        <option value="PAULO MANOEL AMORIM FRAGA">PAULO MANOEL AMORIM FRAGA</option>
+                        <option value="PAULO ROBERTO SILVA CERQUEIRA">PAULO ROBERTO SILVA CERQUEIRA</option>
+                        <option value="PAULO SERGIO BRANDAO">PAULO SERGIO BRANDAO</option>
+                        <option value="PAULO SERGIO DA SILVA MARTINS">PAULO SERGIO DA SILVA MARTINS</option>
+                        <option value="PAULO SERGIO RUFINO DE LIMA">PAULO SERGIO RUFINO DE LIMA</option>
+                        <option value="PEDRO ANGELO SOARES">PEDRO ANGELO SOARES</option>
+                        <option value="PEDRO ELIAS MENEZES SILVA">PEDRO ELIAS MENEZES SILVA</option>
+                        <option value="PEDRO EVANGELISTA RODRIGUES DE ARAUJO">PEDRO EVANGELISTA RODRIGUES DE ARAUJO</option>
+                        <option value="PEDRO JOSE GARCIA ROMERO">PEDRO JOSE GARCIA ROMERO</option>
+                        <option value="PEDRO JUNIOR PEREIRA DOS SANTOS">PEDRO JUNIOR PEREIRA DOS SANTOS</option>
+                        <option value="PEDRO PAULO DE A OLIVEIRA">PEDRO PAULO DE A OLIVEIRA</option>
+                        <option value="RAFAEL DA GRACA FERREIRA DA SILVA">RAFAEL DA GRACA FERREIRA DA SILVA</option>
+                        <option value="RAFAEL DAVI SOARES DE OLIVEIRA">RAFAEL DAVI SOARES DE OLIVEIRA</option>
+                        <option value="RAFAEL FERREIRA DE SOUZA">RAFAEL FERREIRA DE SOUZA</option>
+                        <option value="RAFAEL MIGUEL">RAFAEL MIGUEL</option>
+                        <option value="RAFAEL RIBEIRO DA CUNHA">RAFAEL RIBEIRO DA CUNHA</option>
+                        <option value="RAFAEL ROCHA VIANA">RAFAEL ROCHA VIANA</option>
+                        <option value="RAFAEL TRAJANO SOUZA">RAFAEL TRAJANO SOUZA</option>
+                        <option value="RAIMUNDO NONATO DA SILVA OLIVEIRA">RAIMUNDO NONATO DA SILVA OLIVEIRA</option>
+                        <option value="RAIMUNDO NONATO DOS REMEDIOS OLIVEIRA">RAIMUNDO NONATO DOS REMEDIOS OLIVEIRA</option>
+                        <option value="RAIMUNDO NONATO SILVA DE MENEZES">RAIMUNDO NONATO SILVA DE MENEZES</option>
+                        <option value="RAIMUNDO VILSON RIBEIRO FERREIRA">RAIMUNDO VILSON RIBEIRO FERREIRA</option>
+                        <option value="RAIRO TEIXEIRA LEAO">RAIRO TEIXEIRA LEAO</option>
+                        <option value="RAPHAEL RAVANELLI">RAPHAEL RAVANELLI</option>
+                        <option value="RAUAN DIOGO SOARES SOUZA">RAUAN DIOGO SOARES SOUZA</option>
+                        <option value="RAVEL DE SOUSA FELICIO">RAVEL DE SOUSA FELICIO</option>
+                        <option value="RAYNAN SILVA VIEIRA">RAYNAN SILVA VIEIRA</option>
+                        <option value="REINALDO CARLOS BORGES JUNIOR">REINALDO CARLOS BORGES JUNIOR</option>
+                        <option value="REINALDO PEREIRA MARINHO">REINALDO PEREIRA MARINHO</option>
+                        <option value="REINALDO ROCHA DO NASCIMENTO">REINALDO ROCHA DO NASCIMENTO</option>
+                        <option value="RENAN AUGUSTO BRITO DE SOUZA">RENAN AUGUSTO BRITO DE SOUZA</option>
+                        <option value="RENAN DE SOUZA">RENAN DE SOUZA</option>
+                        <option value="RENAN MARQUES RODRIGUES">RENAN MARQUES RODRIGUES</option>
+                        <option value="RENAN REIS DE FIGUEIREDO">RENAN REIS DE FIGUEIREDO</option>
+                        <option value="RENATO CESAR DO NASCIMENTO">RENATO CESAR DO NASCIMENTO</option>
+                        <option value="RENATO DE PAULA MENDES">RENATO DE PAULA MENDES</option>
+                        <option value="RENATO OLIVEIRA DA SILVA">RENATO OLIVEIRA DA SILVA</option>
+                        <option value="RENUBE JOSE FARIAS DOS SANTOS">RENUBE JOSE FARIAS DOS SANTOS</option>
+                        <option value="RICARDO AMAZONAS PEREIRA">RICARDO AMAZONAS PEREIRA</option>
+                        <option value="RICARDO ARRAEZ VALERIO ESTEVEM">RICARDO ARRAEZ VALERIO ESTEVEM</option>
+                        <option value="RICARDO DA CUNHA FERNANDES">RICARDO DA CUNHA FERNANDES</option>
+                        <option value="RICARDO DA GAMA VIANA">RICARDO DA GAMA VIANA</option>
+                        <option value="RICARDO DE MORAES">RICARDO DE MORAES</option>
+                        <option value="RICARDO DE SOUSA MACIEL">RICARDO DE SOUSA MACIEL</option>
+                        <option value="RICARDO MATIAS DE LIMA CUNHA">RICARDO MATIAS DE LIMA CUNHA</option>
+                        <option value="RICARDO MEDEIROS DA SILVA">RICARDO MEDEIROS DA SILVA</option>
+                        <option value="RICARDO PIMENTEL PINHEIRO">RICARDO PIMENTEL PINHEIRO</option>
+                        <option value="RICARDO RENATO DE SOUZA">RICARDO RENATO DE SOUZA</option>
+                        <option value="RICHARD JOSE SOLIS MUNOZ">RICHARD JOSE SOLIS MUNOZ</option>
+                        <option value="RITER CARLOS SALES DA SILVA">RITER CARLOS SALES DA SILVA</option>
+                        <option value="ROBERTO BARBOSA METZKER">ROBERTO BARBOSA METZKER</option>
+                        <option value="ROBERTO CARDOSO BORGES">ROBERTO CARDOSO BORGES</option>
+                        <option value="ROBERTO CARLOS DE SOUZA">ROBERTO CARLOS DE SOUZA</option>
+                        <option value="ROBERTO CARLOS DOS SANTOS">ROBERTO CARLOS DOS SANTOS</option>
+                        <option value="ROBERTO GIL LIMA DE MELO">ROBERTO GIL LIMA DE MELO</option>
+                        <option value="ROBERTO SANTOS">ROBERTO SANTOS</option>
+                        <option value="ROBISON DE MOURA">ROBISON DE MOURA</option>
+                        <option value="ROBISON DE MOURA FIGUEREDO">ROBISON DE MOURA FIGUEREDO</option>
+                        <option value="ROBSON ALVES DOS SANTOS">ROBSON ALVES DOS SANTOS</option>
+                        <option value="ROBSON DE MOURA">ROBSON DE MOURA</option>
+                        <option value="ROBSON FIGUEIREDO">ROBSON FIGUEIREDO</option>
+                        <option value="ROBSON FIGUEREDO">ROBSON FIGUEREDO</option>
+                        <option value="ROBSON LUIS MARCASSO">ROBSON LUIS MARCASSO</option>
+                        <option value="ROBSON MARQUIES">ROBSON MARQUIES</option>
+                        <option value="ROBSON RICHARD MACIEL">ROBSON RICHARD MACIEL</option>
+                        <option value="RODRIGO CESAR DE ARAUJO MARTINS">RODRIGO CESAR DE ARAUJO MARTINS</option>
+                        <option value="RODRIGO GUIMARÃES">RODRIGO GUIMARÃES</option>
+                        <option value="RODRIGO MARQUES VIANA DOS SANTOS">RODRIGO MARQUES VIANA DOS SANTOS</option>
+                        <option value="RODRIGO NETO CARDOSO DA SILVA">RODRIGO NETO CARDOSO DA SILVA</option>
+                        <option value="RODRIOGO DE SOUZA ANGELINO">RODRIOGO DE SOUZA ANGELINO</option>
+                        <option value="ROGERIO MACARIO DA SILVA">ROGERIO MACARIO DA SILVA</option>
+                        <option value="ROITILA RABELO CAMPOS">ROITILA RABELO CAMPOS</option>
+                        <option value="ROMERIO DAMAZIO DE ARAUJO">ROMERIO DAMAZIO DE ARAUJO</option>
+                        <option value="ROMES DE LIRA DA SILVA">ROMES DE LIRA DA SILVA</option>
+                        <option value="ROMIERE PAIXAO DA SILVA">ROMIERE PAIXAO DA SILVA</option>
+                        <option value="RONALDO ALEXANDRE GARCIA">RONALDO ALEXANDRE GARCIA</option>
+                        <option value="RONALDO ALVES MARTINS LACERDA">RONALDO ALVES MARTINS LACERDA</option>
+                        <option value="RONALDO ALVES PEREIRA">RONALDO ALVES PEREIRA</option>
+                        <option value="RONALDO AUZIER DE ALMEIDA">RONALDO AUZIER DE ALMEIDA</option>
+                        <option value="RONALDO FERNANDES VIANA">RONALDO FERNANDES VIANA</option>
+                        <option value="RONALDO FERREIRA GONCALVES">RONALDO FERREIRA GONCALVES</option>
+                        <option value="RONALDO JESUS SANTIAGO">RONALDO JESUS SANTIAGO</option>
+                        <option value="RONALDO LUIZ DIDONE">RONALDO LUIZ DIDONE</option>
+                        <option value="RONALDO SILVA SILVA">RONALDO SILVA SILVA</option>
+                        <option value="RONEI JOSE HEINECK">RONEI JOSE HEINECK</option>
+                        <option value="RONY CARLOS RODRIGUES">RONY CARLOS RODRIGUES</option>
+                        <option value="ROSSANO ROGERIO MEDEIROS DE SOUZA">ROSSANO ROGERIO MEDEIROS DE SOUZA</option>
+                        <option value="ROZILDA DOS SANTOS ROCHA">ROZILDA DOS SANTOS ROCHA</option>
+                        <option value="RUBENS APARECIDO">RUBENS APARECIDO</option>
+                        <option value="RUBENS APARECIDO BRITO">RUBENS APARECIDO BRITO</option>
+                        <option value="RUBENS APARECIDO BRITO DE SIQUEIRA">RUBENS APARECIDO BRITO DE SIQUEIRA</option>
+                        <option value="RUBENS APARECIDO DE MELO">RUBENS APARECIDO DE MELO</option>
+                        <option value="RUBENS DE NAZARE DE OLIVEIRA SOUZA">RUBENS DE NAZARE DE OLIVEIRA SOUZA</option>
+                        <option value="RUBENS MEIRELES DA PAIXAO">RUBENS MEIRELES DA PAIXAO</option>
+                        <option value="RUI BORGES DO AMPARO">RUI BORGES DO AMPARO</option>
+                        <option value="SAM-0D40">SAM-0D40</option>
+                        <option value="SAMUEL ADRIANO">SAMUEL ADRIANO</option>
+                        <option value="SAMUEL FERREIRA DA COSTA">SAMUEL FERREIRA DA COSTA</option>
+                        <option value="SANDOVAL JOSE SOBRINHO">SANDOVAL JOSE SOBRINHO</option>
+                        <option value="SANDRO SANDRO">SANDRO SANDRO</option>
+                        <option value="SANDRO SANTOS">SANDRO SANTOS</option>
+                        <option value="SEBASTIAO DOS SANTOS">SEBASTIAO DOS SANTOS</option>
+                        <option value="SEBASTIAO FURTADO JUNIOR">SEBASTIAO FURTADO JUNIOR</option>
+                        <option value="SEBASTIAO PEREIRA DE SOUZA">SEBASTIAO PEREIRA DE SOUZA</option>
+                        <option value="SERAFIM GALHARDO">SERAFIM GALHARDO</option>
+                        <option value="SERAFIM GALHARDO FILHO">SERAFIM GALHARDO FILHO</option>
+                        <option value="SERGIO ALVES">SERGIO ALVES</option>
+                        <option value="SERGIO DOS SANTOS NISHIDA">SERGIO DOS SANTOS NISHIDA</option>
+                        <option value="SERGIO LUIS GOMES DA SILVA">SERGIO LUIS GOMES DA SILVA</option>
+                        <option value="SERGIO MARTINS DE OLIVEIRA">SERGIO MARTINS DE OLIVEIRA</option>
+                        <option value="SILAS ROSA DA SILVA">SILAS ROSA DA SILVA</option>
+                        <option value="SILVEIRA GNAM">SILVEIRA GNAM</option>
+                        <option value="SILVEIRA GNANN">SILVEIRA GNANN</option>
+                        <option value="SILVIO DE SOUZA AQUINO">SILVIO DE SOUZA AQUINO</option>
+                        <option value="SIMEON KONSTANTINOVICH NUNES">SIMEON KONSTANTINOVICH NUNES</option>
+                        <option value="SUELDES PEREIRA GALVAO">SUELDES PEREIRA GALVAO</option>
+                        <option value="TABATA PRISCILA CAMACHO">TABATA PRISCILA CAMACHO</option>
+                        <option value="TARCISIO MARTINS SILVA">TARCISIO MARTINS SILVA</option>
+                        <option value="TEODOMIRO JOSE DA SILVA">TEODOMIRO JOSE DA SILVA</option>
+                        <option value="TEODORO DA SILVA REIS">TEODORO DA SILVA REIS</option>
+                        <option value="THALISON DA SILVA BAHIA">THALISON DA SILVA BAHIA</option>
+                        <option value="THIAGO AMARO DA SILVA">THIAGO AMARO DA SILVA</option>
+                        <option value="THIAGO CARNEIRO DA SILVA">THIAGO CARNEIRO DA SILVA</option>
+                        <option value="THIAGO LOPES DA SILVA">THIAGO LOPES DA SILVA</option>
+                        <option value="THIAGO NORONHA DE SOUZA">THIAGO NORONHA DE SOUZA</option>
+                        <option value="THIAGO OLIVEIRA DA SILVA">THIAGO OLIVEIRA DA SILVA</option>
+                        <option value="THYAGO AMORIM MOREIRA">THYAGO AMORIM MOREIRA</option>
+                        <option value="THYAGO AMORIM MORREIRA">THYAGO AMORIM MORREIRA</option>
+                        <option value="TIAGO APARECIDO AZARIAS MASCARINI">TIAGO APARECIDO AZARIAS MASCARINI</option>
+                        <option value="TIAGO FIDELIX TELES">TIAGO FIDELIX TELES</option>
+                        <option value="TONY PATRICK DUARTE DE MATOS">TONY PATRICK DUARTE DE MATOS</option>
+                        <option value="UALES SANTOS BORGES">UALES SANTOS BORGES</option>
+                        <option value="UBIRAJARA BINSEI NISHIUCHI">UBIRAJARA BINSEI NISHIUCHI</option>
+                        <option value="VADISLAU DE ASSIS">VADISLAU DE ASSIS</option>
+                        <option value="VAGNER COELHO">VAGNER COELHO</option>
+                        <option value="VALBER DIAS ARRAIS">VALBER DIAS ARRAIS</option>
+                        <option value="VALDECI LUZ BERNARDES">VALDECI LUZ BERNARDES</option>
+                        <option value="VALDECI ROSA RODRIGUES">VALDECI ROSA RODRIGUES</option>
+                        <option value="VALDEIR CORDEIRO MESQUITA">VALDEIR CORDEIRO MESQUITA</option>
+                        <option value="VALDENER MINGHINI">VALDENER MINGHINI</option>
+                        <option value="VALDENEZ ARAUJO">VALDENEZ ARAUJO</option>
+                        <option value="VALDENIR APARECIDO DE CARVALHO">VALDENIR APARECIDO DE CARVALHO</option>
+                        <option value="VALDENOR RAIMUNDO MARIANO">VALDENOR RAIMUNDO MARIANO</option>
+                        <option value="VALDERY DE LIMA SOUSA">VALDERY DE LIMA SOUSA</option>
+                        <option value="VALDILON DA CRUZ DE SOUSA">VALDILON DA CRUZ DE SOUSA</option>
+                        <option value="VALDIR ROSA">VALDIR ROSA</option>
+                        <option value="VALDMAX SANTOS DA SILVEIRA">VALDMAX SANTOS DA SILVEIRA</option>
+                        <option value="VALENTIM BONETTI">VALENTIM BONETTI</option>
+                        <option value="VALFREDO RODRIGUES MAIA">VALFREDO RODRIGUES MAIA</option>
+                        <option value="VALMIR COSTA BRAZ">VALMIR COSTA BRAZ</option>
+                        <option value="VALMIR DE ALMEIDA PEREIRA">VALMIR DE ALMEIDA PEREIRA</option>
+                        <option value="VALMIR DE SOUZA">VALMIR DE SOUZA</option>
+                        <option value="VALTENES SIQUEIRA DE SOUZA">VALTENES SIQUEIRA DE SOUZA</option>
+                        <option value="VALTER BRUSCAGIM">VALTER BRUSCAGIM</option>
+                        <option value="VANDERLEI VIEIRA DE SOUZA">VANDERLEI VIEIRA DE SOUZA</option>
+                        <option value="VANILSO FELINI">VANILSO FELINI</option>
+                        <option value="VICTOR CARLOS COELHO DE SOUZA">VICTOR CARLOS COELHO DE SOUZA</option>
+                        <option value="VILSON BARBOSA DA COSTA">VILSON BARBOSA DA COSTA</option>
+                        <option value="VINICIUS DONIZETE MAGDALENA">VINICIUS DONIZETE MAGDALENA</option>
+                        <option value="VINICIUS DONIZETI MAGDALENA">VINICIUS DONIZETI MAGDALENA</option>
+                        <option value="VINICIUS MACHADO DA SILVA JUNIOR">VINICIUS MACHADO DA SILVA JUNIOR</option>
+                        <option value="VINICIUS QUEIROZ">VINICIUS QUEIROZ</option>
+                        <option value="VIRGILIO ISAAC BRITO ARREAZA">VIRGILIO ISAAC BRITO ARREAZA</option>
+                        <option value="VITOR CESAR PEREIRA DE QUEIROZ">VITOR CESAR PEREIRA DE QUEIROZ</option>
+                        <option value="VOLNEI CARDOSO CORREA">VOLNEI CARDOSO CORREA</option>
+                        <option value="WAGNER BROLLO">WAGNER BROLLO</option>
+                        <option value="WAGNER DA SILVA FERREIRA">WAGNER DA SILVA FERREIRA</option>
+                        <option value="WAGNER EVANGELISTA PEREIRA">WAGNER EVANGELISTA PEREIRA</option>
+                        <option value="WAGNER FANT">WAGNER FANT</option>
+                        <option value="WAGNER FANTI">WAGNER FANTI</option>
+                        <option value="WAGNER MARCOS">WAGNER MARCOS</option>
+                        <option value="WAGNER MARCOS SPOLADOR">WAGNER MARCOS SPOLADOR</option>
+                        <option value="WAGNER MOREIRA">WAGNER MOREIRA</option>
+                        <option value="WAGRAM PEU">WAGRAM PEU</option>
+                        <option value="WALDECIR OLIVEIRA DA SILVA">WALDECIR OLIVEIRA DA SILVA</option>
+                        <option value="WALDEIR ALBERIO DE SOUSA">WALDEIR ALBERIO DE SOUSA</option>
+                        <option value="WALDEMAR CAZELATO JUNIOR">WALDEMAR CAZELATO JUNIOR</option>
+                        <option value="WALDIR CUNHA DA SILVA">WALDIR CUNHA DA SILVA</option>
+                        <option value="WALDOMIRO ELIZEU DE SOUZA OLIVEIRA JUNIOR">WALDOMIRO ELIZEU DE SOUZA OLIVEIRA JUNIOR</option>
+                        <option value="WALISSON COELHO DE SOUZA">WALISSON COELHO DE SOUZA</option>
+                        <option value="WALMIR ZANIBONI">WALMIR ZANIBONI</option>
+                        <option value="WALTER LACERDA NASCIMENTO">WALTER LACERDA NASCIMENTO</option>
+                        <option value="WASHINGTON SILVA SANTOS">WASHINGTON SILVA SANTOS</option>
+                        <option value="WEBER LIMA RAMOS">WEBER LIMA RAMOS</option>
+                        <option value="WELISSON BATISTA DE JESUS">WELISSON BATISTA DE JESUS</option>
+                        <option value="WELLIAON BATISTA DE JESUS">WELLIAON BATISTA DE JESUS</option>
+                        <option value="WELLINGTON BARBOSA">WELLINGTON BARBOSA</option>
+                        <option value="WELLINGTON DA SILVA SOUSA">WELLINGTON DA SILVA SOUSA</option>
+                        <option value="WELLINGTON DE OLIVEIRA SILVA">WELLINGTON DE OLIVEIRA SILVA</option>
+                        <option value="WELLINGTON DOS SANTOS GRASIOLI">WELLINGTON DOS SANTOS GRASIOLI</option>
+                        <option value="WELLINGTON GONÇALVES DA SILVA">WELLINGTON GONÇALVES DA SILVA</option>
+                        <option value="WELLINGTON NASCIMENTO MARTINS">WELLINGTON NASCIMENTO MARTINS</option>
+                        <option value="WELLINGTON RODRIGUES FIGUEIRA">WELLINGTON RODRIGUES FIGUEIRA</option>
+                        <option value="WELVERTON BARBOSA">WELVERTON BARBOSA</option>
+                        <option value="WENDER FRANCIS SILVA SANTOS">WENDER FRANCIS SILVA SANTOS</option>
+                        <option value="WESLEN NASCIMENTO CARVALHO">WESLEN NASCIMENTO CARVALHO</option>
+                        <option value="WESLEY DE SOUZA SILVA">WESLEY DE SOUZA SILVA</option>
+                        <option value="WESLEY FERNANDES DA SILVA">WESLEY FERNANDES DA SILVA</option>
+                        <option value="WESLEY NASCIMENTO CARVALHO">WESLEY NASCIMENTO CARVALHO</option>
+                        <option value="WILKER WILLIAM DE ARAUJO LEMOS">WILKER WILLIAM DE ARAUJO LEMOS</option>
+                        <option value="WILL ROBSON VASCONCELOS MACIEL">WILL ROBSON VASCONCELOS MACIEL</option>
+                        <option value="WILLAMS FRANCISCO DE ASSIS FILHO">WILLAMS FRANCISCO DE ASSIS FILHO</option>
+                        <option value="WILLIAN MIRANDA JULIAO">WILLIAN MIRANDA JULIAO</option>
+                        <option value="WILSON DIAS">WILSON DIAS</option>
+                        <option value="WILSON FERREIRA DO NASCIMENTO">WILSON FERREIRA DO NASCIMENTO</option>
+                        <option value="WILSON GOMES DA SILVA">WILSON GOMES DA SILVA</option>
+                        <option value="WILSON JOSE DA SILVA">WILSON JOSE DA SILVA</option>
+                        <option value="YASTER BONAFE DOS SANTOS">YASTER BONAFE DOS SANTOS</option>
+                    </select>
+                </div>    
+            
+
+                <label for="responsavel">Responsável pelo teste</label>
+                <select id="responsavel" name="responsavel" required>
+                    <option value="">Selecione o responsável</option>
+                    <option value="ANA CLAUDIA">ANA CLAUDIA</option>
+                    <option value="DANIEL">DANIEL</option>
+                    <option value="JOEL">JOEL</option>
+                    <option value="MIRTISSON">MIRTISSON</option>
+                    <option value="NOELE">NOELE</option>
+                    <option value="THAMARA">THAMARA</option>
+                </select>
+
+                <label for="data_emissao">Data da emissão:</label>
+                <input type="date" id="data_emissao" name="data_emissao">
+
+                <label for="cep">Local do veículo:</label>
+                <input type="text" id="cep" name="cep" placeholder="Digite o CEP">
+                <input type="text" id="localizacao" name="localizacao" placeholder="Localização (preenchimento automático)" readonly>
+            </fieldset>
+
+            <fieldset>
+
+            <div class="spacer"></div>
+
+                <legend>Itens Verificados</legend>
+                <label for="bloqueio">Bloqueio:</label>
+                <select id="bloqueio" name="bloqueio">
+                    <option value="NÃO É VERIFICADO">NÃO É VERIFICADO</option>
+                    <option value="FUNCIONANDO">FUNCIONANDO</option>
+                    <option value="NÃO ESTÁ FUNCIONANDO">NÃO ESTÁ FUNCIONANDO</option>
+                    <option value="NÃO POSSUI">NÃO POSSUI</option>
+                </select>
+
+                <label for="sirene">Sirene:</label>
+                <select id="sirene" name="sirene" required>
+                    <option value="">NÃO É VERIFICADO</option>
+                    <option value="">FUNCIONANDO</option>
+                    <option value="">NÃO ESTÁ FUNCIONANDO</option>
+                    <option value="">NÃO POSSUI</option>                     
+                </select>
+
+                <label for="ignicao">Sensor de ignição:</label>
+                <select id="ignicao" name="ignicao" required>
+                    <option value="">NÃO É VERIFICADO</option>
+                    <option value="">FUNCIONANDO</option>
+                    <option value="">NÃO ESTÁ FUNCIONANDO</option>
+                    <option value="">NÃO POSSUI</option>                     
+                </select>
+
+                <div class="input-box">
+
+                <label for="pmotorista">Sensor porta motorista:</label>
+                <select id="pmotorista" name="pmotorista" required>
+                    <option value="">NÃO É VERIFICADO</option>
+                    <option value="">FUNCIONANDO</option>
+                    <option value="">NÃO ESTÁ FUNCIONANDO</option>
+                    <option value="">NÃO POSSUI</option>                     
+                </select>
+                
+                <label for="pcarona">Sensor porta do carona:</label>
+                <select id="pcarona" name="pcarona" required>
+                    <option value="">NÃO É VERIFICADO</option>
+                    <option value="">FUNCIONANDO</option>
+                    <option value="">NÃO ESTÁ FUNCIONANDO</option>
+                    <option value="">NÃO POSSUI</option>                     
+                </select>
+            </div>
+                
+                <label for="teclado">Teclado:</label>
+                <select id="teclado" name="teclado" required>
+                    <option value="">NÃO É VERIFICADO</option>
+                    <option value="">FUNCIONANDO</option>
+                    <option value="">NÃO ESTÁ FUNCIONANDO</option>
+                    <option value="">NÃO POSSUI</option>                     
+                </select>
+                
+                <label for="painel">Sensor de painel:</label>
+                <select id="painel" name="painel" required>
+                    <option value="">NÃO É VERIFICADO</option>
+                    <option value="">FUNCIONANDO</option>
+                    <option value="">NÃO ESTÁ FUNCIONANDO</option>
+                    <option value="">NÃO POSSUI</option>                      
+                </select>
+
+                <label for="panico">Botão de pânico:</label>
+                <select id="panico" name="panico" required>
+                    <option value="">NÃO É VERIFICADO</option>
+                    <option value="">FUNCIONANDO</option>
+                    <option value="">NÃO ESTÁ FUNCIONANDO</option>
+                    <option value="">NÃO POSSUI</option>                     
+                </select>
+                <div class="input-box">
+                <label for="antena">Antena:</label>
+                <select id="antena" name="antena" required>
+                    <option value="">NÃO É VERIFICADO</option>
+                    <option value="">FUNCIONANDO</option>
+                    <option value="">NÃO ESTÁ FUNCIONANDO</option>
+                    <option value="">NÃO POSSUI</option>                     
+                </select>
+                
+                <label for="equipamento">Violação Equip:</label>
+                <select id="equipamento" name="equipaento" required>
+                    <option value="">NÃO É VERIFICADO</option>
+                    <option value="">FUNCIONANDO</option>
+                    <option value="">NÃO ESTÁ FUNCIONANDO</option>
+                    <option value="">NÃO POSSUI</option>                     
+                </select>
+                
+                <label for="gps">GPS:</label>
+                <select id="gps" name="gps" required>
+                    <option value="">NÃO É VERIFICADO</option>
+                    <option value="">FUNCIONANDO</option>
+                    <option value="">NÃO ESTÁ FUNCIONANDO</option>
+                    <option value="">NÃO POSSUI</option>                     
+                </select></div>
+                
+                <label for="sbau1">Sensor porta do baú 1:</label>
+                <select id="sbau1" name="sbau1" required>
+                    <option value="">NÃO É VERIFICADO</option>
+                    <option value="">FUNCIONANDO</option>
+                    <option value="">NÃO ESTÁ FUNCIONANDO</option>
+                    <option value="">NÃO POSSUI</option>                     
+                </select>
+
+                <label for="tbau1">Trava porta do baú 1:</label>
+                <select id="tbau1" name="tbau1" required>
+                    <option value="">NÃO É VERIFICADO</option>
+                    <option value="">FUNCIONANDO</option>
+                    <option value="">NÃO ESTÁ FUNCIONANDO</option>
+                    <option value="">NÃO POSSUI</option>                    
+                </select>
+                <div class="input-box">
+                <label for="sbau2">Sensor porta do baú 2:</label>
+                <select id="sbau2" name="sbau2" required>
+                    <option value="">NÃO É VERIFICADO</option>
+                    <option value="">FUNCIONANDO</option>
+                    <option value="">NÃO ESTÁ FUNCIONANDO</option>
+                    <option value="">NÃO POSSUI</option>                    
+                </select>
+                
+                <label for="tbau2">Trava porta do baú 2:</label>
+                <select id="tbau2" name="tbau2" required>
+                    <option value="">NÃO É VERIFICADO</option>
+                    <option value="">FUNCIONANDO</option>
+                    <option value="">NÃO ESTÁ FUNCIONANDO</option>
+                    <option value="">NÃO POSSUI</option>                    
+                </select></div>
+                
+                <label for="desengate1">Desengate 1:</label>
+                <select id="desengate1" name="desengate1" required>
+                    <option value="">NÃO É VERIFICADO</option>
+                    <option value="">FUNCIONANDO</option>
+                    <option value="">NÃO ESTÁ FUNCIONANDO</option>
+                    <option value="">NÃO POSSUI</option>                    
+                </select>
+                
+                <label for="desengate2">Desengate 2:</label>
+                <select id="desengate2" name="desengate2" required>
+                    <option value="">NÃO É VERIFICADO</option>
+                    <option value="">FUNCIONANDO</option>
+                    <option value="">NÃO ESTÁ FUNCIONANDO</option>
+                    <option value="">NÃO POSSUI</option>                    
+                </select>
+                
+                <label for="roda5">Trava 5ª roda 1:</label>
+                <select id="roda5" name="5roda" required>
+                    <option value="">NÃO É VERIFICADO</option>
+                    <option value="">FUNCIONANDO</option>
+                    <option value="">NÃO ESTÁ FUNCIONANDO</option>
+                    <option value="">NÃO POSSUI</option>                    
+                </select>
+                
+                <label for="roda52">Trava 5ª roda 2:</label>
+                <select id="roda52" name="5roda2" required>
+                    <option value="">NÃO É VERIFICADO</option>
+                    <option value="">FUNCIONANDO</option>
+                    <option value="">NÃO ESTÁ FUNCIONANDO</option>
+                    <option value="">NÃO POSSUI</option>                    
+                </select>
+                
+                <label for="localizador">Localizador:</label>
+                <select id="localizador" name="localizador" required>
+                    <option value="">NÃO É VERIFICADO</option>
+                    <option value="">FUNCIONANDO</option>
+                    <option value="">NÃO ESTÁ FUNCIONANDO</option>
+                    <option value="">NÃO POSSUI</option>                    
+                </select>
+
+                <label for="acabine">Aviso cabine:</label>
+                <select id="acabine" name="acabine" required>
+                    <option value="">NÃO É VERIFICADO</option>
+                    <option value="">FUNCIONANDO</option>
+                    <option value="">NÃO ESTÁ FUNCIONANDO</option>
+                    <option value="">NÃO POSSUI</option>                    
+                </select>
+
+            </fieldset>
+
+            <div class="spacer"></div>
+
+            <div class="input-box">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ACS Consult. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="./src/script.js"></script>
+
+    <script>
+        function getLocationByCEP() {
+            const cep = document.getElementById("cep").value;
+            if (cep.length !== 8) {
+                alert("Por favor, insira um CEP válido com 8 dígitos.");
+                return;
+            }
+
+            fetch(`https://viacep.com.br/ws/${cep}/json/`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.erro) {
+                        alert("CEP não encontrado.");
+                    } else {
+                        const { localidade, uf } = data;
+                        const localizacao = `${localidade}, ${uf} - Brasil`;
+                        document.getElementById("localizacao").value = localizacao;
+                    }
+                })
+                .catch(error => {
+                    console.error("Erro ao buscar CEP:", error);
+                    alert("Ocorreu um erro ao buscar o CEP.");
+                });
+        }
+
+           document.getElementById("cep").addEventListener("blur", getLocationByCEP);
+    </script>
+</body>
+
+</html>
